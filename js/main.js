@@ -29,6 +29,8 @@ import { renderConflictDetail } from './components/detail-view.js';
 import { renderDashboard } from './components/dashboard.js';
 import { initScrollytelling } from './components/scrollytelling.js';
 import { initChatWidget } from './components/chat-widget.js';
+import { injectIconSprite } from './components/icons.js';
+import { initHeroGlobe } from './components/hero-globe.js';
 
 // v3: Education imports (lazy loaded on route)
 let educationData = null;
@@ -42,11 +44,17 @@ async function getEducationData() {
 // ---- Initialize everything on DOM ready ----
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Inject SVG icon sprite (must run before any rendering)
+  injectIconSprite();
+
   // Navigation
   initNav();
 
   // AI Chat Widget (floating bubble)
   initChatWidget();
+
+  // Hero globe background animation
+  initHeroGlobe('hero-globe', currentConflicts);
 
   // Render all sections
   renderCauseCategories(document.getElementById('cause-categories'), causeCategories);

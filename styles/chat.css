@@ -29,10 +29,28 @@
 }
 
 .chat-bubble.open {
-  transform: rotate(45deg) scale(1);
+  transform: rotate(0deg) scale(1);
   background: var(--bg-card);
   color: var(--text-secondary);
   box-shadow: var(--shadow-md);
+}
+
+/* SVG icons inside the bubble */
+.chat-bubble .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* One-time pulse animation — triggered after 30s delay */
+.chat-bubble-pulse {
+  animation: chatBubblePulse 1.5s ease-out 1;
+}
+
+@keyframes chatBubblePulse {
+  0%   { box-shadow: 0 4px 20px rgba(78, 205, 196, 0.4); }
+  30%  { box-shadow: 0 0 0 12px rgba(78, 205, 196, 0.25), 0 4px 20px rgba(78, 205, 196, 0.4); }
+  60%  { box-shadow: 0 0 0 20px rgba(78, 205, 196, 0), 0 4px 20px rgba(78, 205, 196, 0.4); }
+  100% { box-shadow: 0 4px 20px rgba(78, 205, 196, 0.4); }
 }
 
 /* The chat panel */
@@ -341,6 +359,103 @@
   font-size: 0.8rem;
   color: var(--accent-red);
   text-align: center;
+}
+
+/* ============================================
+   Quick Answers mode (no AI backend)
+   ============================================ */
+
+/* Container for the QA cards */
+.chat-qa-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Expandable question card */
+.chat-qa-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.chat-qa-item:hover {
+  border-color: var(--border-medium);
+}
+
+.chat-qa-item.open {
+  border-color: rgba(78, 205, 196, 0.3);
+}
+
+.chat-qa-question {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1.5;
+}
+
+.chat-qa-question:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-accent);
+}
+
+.chat-qa-item.open .chat-qa-question {
+  color: var(--accent-peace);
+  font-weight: 500;
+}
+
+/* Answer — hidden by default, revealed on open */
+.chat-qa-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 14px;
+  background: var(--bg-secondary);
+}
+
+.chat-qa-item.open .chat-qa-answer {
+  max-height: 300px;
+  padding: 10px 14px 14px;
+}
+
+.chat-qa-answer p {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+/* Link to site section within answer */
+.chat-qa-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent-peace);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.chat-qa-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Small muted note about AI availability */
+.chat-offline-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 4px 0 10px;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Responsive */

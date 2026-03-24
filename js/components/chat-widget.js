@@ -7,14 +7,21 @@
 // 2. An expandable chat panel with messages
 // 3. Streaming connection to the /api/v1/chat/stream endpoint
 //
+// GRACEFUL DEGRADATION:
+// When the AI backend is unavailable (e.g. on GitHub Pages),
+// the widget switches to "Quick Answers" mode — pre-written
+// Q&A cards organized by site section. No broken UI.
+//
 // DESIGN DECISION: Vanilla JS, no framework
 // Matches the rest of the site. The chat widget is self-contained —
 // it injects its own HTML and manages its own state.
 
+import { quickAnswers, sectionCategoryMap } from '../data/quick-answers.js';
+
 // API base URL — points to the backend server
 const API_BASE = window.PEACE_API_URL || 'http://localhost:3001';
 
-// Suggested questions for first-time users
+// Suggested questions for first-time users (AI mode)
 const SUGGESTIONS = [
   "Why is there war in Sudan?",
   "How did the Northern Ireland conflict end?",
@@ -27,6 +34,7 @@ let isOpen = false;
 let isLoading = false;
 let messages = []; // { role: 'user'|'assistant', content: string, sources?: [] }
 let aiReady = false;
+let qaMode = false; // true when AI is unavailable
 
 /**
  * Initialize the chat widget.
@@ -36,6 +44,45 @@ export function initChatWidget() {
   injectHTML();
   bindEvents();
   checkAIStatus();
+  scheduleBubblePulse();
+}
+
+// ============================================
+// Determine the current site section
+// ============================================
+function getCurrentSection() {
+  const hash = window.location.hash.slice(1) || '/';
+
+  // Check for exact matches first
+  if (sectionCategoryMap[hash]) return sectionCategoryMap[hash];
+
+  // Check prefix matches (e.g. /conflict/sudan -> current)
+  if (hash.startsWith('/conflict/')) return 'current';
+  if (hash.startsWith('/lesson/') || hash.startsWith('/module/') || hash.startsWith('/quiz/')) return 'historical';
+  if (hash.startsWith('/brief/')) return 'current';
+  if (hash.startsWith('/simulate')) return 'patterns';
+
+  return 'current'; // default
+}
+
+/**
+ * Get quick answers sorted by relevance to current section.
+ * Section-relevant answers come first, then the rest.
+ */
+function getSortedQuickAnswers() {
+  const section = getCurrentSection();
+  const relevant = [];
+  const other = [];
+
+  for (const qa of quickAnswers) {
+    if (qa.category === section) {
+      relevant.push(qa);
+    } else {
+      other.push(qa);
+    }
+  }
+
+  return [...relevant, ...other];
 }
 
 // ============================================
@@ -45,16 +92,16 @@ function injectHTML() {
   const container = document.createElement('div');
   container.id = 'chat-widget';
   container.innerHTML = `
-    <button class="chat-bubble" id="chat-bubble" aria-label="Ask AI about conflicts">
-      <span class="chat-bubble-icon">💬</span>
+    <button class="chat-bubble" id="chat-bubble" aria-label="Ask about conflicts">
+      <span class="chat-bubble-icon"><svg class="icon"><use href="#icon-help"/></svg></span>
     </button>
 
     <div class="chat-panel" id="chat-panel">
       <div class="chat-header">
-        <div class="chat-header-icon">☮</div>
+        <div class="chat-header-icon"><svg class="icon"><use href="#icon-peace"/></svg></div>
         <div class="chat-header-text">
           <h4>Ask About Any Conflict</h4>
-          <p>AI-powered answers from verified data</p>
+          <p id="chat-header-subtitle">AI-powered answers from verified data</p>
         </div>
         <div class="chat-header-status" id="chat-status" title="Checking AI status..."></div>
       </div>
@@ -70,7 +117,7 @@ function injectHTML() {
         </div>
       </div>
 
-      <div class="chat-input-area">
+      <div class="chat-input-area" id="chat-input-area">
         <textarea
           class="chat-input"
           id="chat-input"
@@ -148,13 +195,37 @@ function togglePanel() {
 
   panel.classList.toggle('open', isOpen);
   bubble.classList.toggle('open', isOpen);
-  bubbleIcon.textContent = isOpen ? '✕' : '💬';
 
-  if (isOpen) {
+  bubbleIcon.innerHTML = isOpen
+    ? '<svg class="icon"><use href="#icon-close"/></svg>'
+    : '<svg class="icon"><use href="#icon-help"/></svg>';
+
+  if (isOpen && !qaMode) {
     setTimeout(() => {
       document.getElementById('chat-input').focus();
     }, 300);
   }
+
+  // In QA mode, refresh the answers when opening (section may have changed)
+  if (isOpen && qaMode) {
+    renderQuickAnswers();
+  }
+}
+
+// ============================================
+// 30-second delayed pulse animation
+// ============================================
+function scheduleBubblePulse() {
+  setTimeout(() => {
+    const bubble = document.getElementById('chat-bubble');
+    if (bubble && !isOpen) {
+      bubble.classList.add('chat-bubble-pulse');
+      // Remove after animation completes (one cycle)
+      bubble.addEventListener('animationend', () => {
+        bubble.classList.remove('chat-bubble-pulse');
+      }, { once: true });
+    }
+  }, 30000);
 }
 
 // ============================================
@@ -171,12 +242,76 @@ async function checkAIStatus() {
     statusDot.className = `chat-header-status ${aiReady ? '' : 'offline'}`;
     statusDot.title = aiReady
       ? `AI ready (${data.data.embeddingCount} data chunks indexed)`
-      : 'AI not configured — answers unavailable';
+      : 'AI not configured — using quick answers';
+
+    if (!aiReady) {
+      switchToQAMode();
+    }
   } catch {
     statusDot.className = 'chat-header-status offline';
-    statusDot.title = 'Cannot reach AI server';
+    statusDot.title = 'AI unavailable — using quick answers';
     aiReady = false;
+    switchToQAMode();
   }
+}
+
+// ============================================
+// Switch to Quick Answers mode (no AI)
+// ============================================
+function switchToQAMode() {
+  qaMode = true;
+
+  // Update subtitle
+  const subtitle = document.getElementById('chat-header-subtitle');
+  subtitle.textContent = 'Quick answers from verified data';
+
+  // Hide the text input area
+  const inputArea = document.getElementById('chat-input-area');
+  inputArea.style.display = 'none';
+
+  // Replace the welcome/messages area with quick answers
+  renderQuickAnswers();
+}
+
+function renderQuickAnswers() {
+  const container = document.getElementById('chat-messages');
+  const sorted = getSortedQuickAnswers();
+
+  container.innerHTML = `
+    <div class="chat-qa-mode">
+      <p class="chat-offline-note">
+        <svg class="icon" style="width:14px;height:14px;vertical-align:-2px;margin-right:4px;opacity:0.6"><use href="#icon-help"/></svg>
+        AI chat available when running locally
+      </p>
+      ${sorted.map((qa, i) => `
+        <div class="chat-qa-item" data-qa-index="${i}">
+          <button class="chat-qa-question" aria-expanded="false">${qa.question}</button>
+          <div class="chat-qa-answer">
+            <p>${qa.answer}</p>
+            <a href="${qa.link}" class="chat-qa-link">${qa.linkText} &rarr;</a>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  // Bind click handlers for expandable cards
+  container.querySelectorAll('.chat-qa-item').forEach(item => {
+    const btn = item.querySelector('.chat-qa-question');
+    btn.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      // Close all others
+      container.querySelectorAll('.chat-qa-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.chat-qa-question').setAttribute('aria-expanded', 'false');
+      });
+      // Toggle clicked
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 }
 
 // ============================================
@@ -302,12 +437,12 @@ async function sendMessage() {
 
 function addMessage(role, content) {
   const container = document.getElementById('chat-messages');
-  const avatarEmoji = role === 'user' ? '👤' : '☮';
+  const avatarIcon = role === 'user' ? 'people' : 'peace';
 
   const msgEl = document.createElement('div');
   msgEl.className = `chat-msg ${role}`;
   msgEl.innerHTML = `
-    <div class="chat-msg-avatar">${avatarEmoji}</div>
+    <div class="chat-msg-avatar"><svg class="icon"><use href="#icon-${avatarIcon}"/></svg></div>
     <div class="chat-msg-body">
       ${content ? formatMarkdown(content) : '<p></p>'}
     </div>
@@ -324,7 +459,7 @@ function showTyping() {
   const el = document.createElement('div');
   el.className = 'chat-msg assistant';
   el.innerHTML = `
-    <div class="chat-msg-avatar">☮</div>
+    <div class="chat-msg-avatar"><svg class="icon"><use href="#icon-peace"/></svg></div>
     <div class="chat-msg-body">
       <div class="chat-typing">
         <div class="chat-typing-dot"></div>

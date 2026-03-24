@@ -2,9 +2,11 @@
 // Patterns, Path Forward & Apply Lessons Data
 // ============================================
 
+import { icon } from '../components/icons.js';
+
 export const patterns = [
   {
-    icon: '\uD83D\uDCCA',
+    icon: icon('chart-bar'),
     title: 'Wars Are Getting Fewer But Deadlier',
     content: 'Interstate wars between countries have declined dramatically since 1945 \u2014 the UN system, nuclear deterrence, and economic interdependence work. But civil wars and internal conflicts have increased, often lasting decades. Modern conflicts kill more civilians through indirect causes (famine, disease, displacement) than direct combat.',
     points: [
@@ -15,7 +17,7 @@ export const patterns = [
     ]
   },
   {
-    icon: '\uD83D\uDD01',
+    icon: icon('refresh'),
     title: 'Conflicts Recur Without Root-Cause Solutions',
     content: 'About 60% of civil wars restart within a decade of ending. Wars that end through negotiation without addressing underlying causes \u2014 poverty, exclusion, grievance \u2014 almost always reignite. Military victory alone rarely produces lasting peace.',
     points: [
@@ -26,7 +28,7 @@ export const patterns = [
     ]
   },
   {
-    icon: '\uD83C\uDF10',
+    icon: icon('globe'),
     title: 'External Involvement Prolongs Conflicts',
     content: 'When outside powers provide weapons, funding, or political support to warring parties, conflicts last significantly longer. Proxy wars are harder to resolve because external actors have their own interests that may not align with local peace.',
     points: [
@@ -37,7 +39,7 @@ export const patterns = [
     ]
   },
   {
-    icon: '\uD83D\uDCC8',
+    icon: icon('trending-up'),
     title: 'Democracy and Development Reduce Conflict Risk',
     content: 'No two established democracies have ever gone to war with each other (the "Democratic Peace" theory). Countries with higher GDP per capita, lower inequality, and stronger rule of law are dramatically less likely to experience civil war.',
     points: [
@@ -49,7 +51,7 @@ export const patterns = [
     fullWidth: true,
   },
   {
-    icon: '\u26A0\uFE0F',
+    icon: icon('warning'),
     title: 'Warning Signs Are Predictable',
     content: 'Genocides and mass atrocities are never spontaneous. They follow predictable patterns: dehumanizing language, scapegoating, political polarization, militia formation, and weapons stockpiling. Early intervention at these stages is far cheaper and more effective than responding after violence begins.',
     points: [
@@ -60,7 +62,7 @@ export const patterns = [
     ]
   },
   {
-    icon: '\u2728',
+    icon: icon('sparkles'),
     title: 'Peace Is the Norm, Not the Exception',
     content: 'Despite constant news coverage of conflict, the vast majority of the world is at peace. Most diverse societies manage their differences without violence. The global trajectory over centuries is toward less violence \u2014 but progress requires constant effort and is never guaranteed.',
     points: [

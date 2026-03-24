@@ -15,8 +15,116 @@ const SEVERITY_CONFIG = {
 const TILE_URL = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
 const TILE_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>';
 
+// Connection arcs between related conflicts
+const CONNECTIONS = [
+  ['russia-ukraine', 'north-korea'],    // Nuclear tensions, sanctions
+  ['russia-ukraine', 'syria'],           // Russian military involvement
+  ['israel-palestine', 'yemen'],         // Houthi attacks, Iran axis
+  ['israel-palestine', 'syria'],         // Regional instability
+  ['sudan', 'ethiopia'],                 // Regional spillover, refugees
+  ['sudan', 'drc'],                      // Central African instability
+  ['sahel', 'somalia'],                  // Islamist insurgency
+  ['drc', 'ethiopia'],                   // Great Lakes region
+  ['myanmar', 'south-china-sea'],        // Southeast Asian tensions
+  ['taiwan', 'south-china-sea'],         // China assertion
+  ['taiwan', 'north-korea'],             // East Asian security
+];
+
 let globalMap = null;
 let markers = [];
+let pulseIntervals = [];
+
+// Parse displaced string to a number (e.g. "~14 million" → 14000000)
+function parseDisplacedNumber(str) {
+  if (!str || str === 'N/A') return 0;
+  const cleaned = str.toLowerCase().replace(/[~,]/g, '').trim();
+  const match = cleaned.match(/([\d.]+)\s*(million|mil|m\b)?/);
+  if (!match) {
+    // Try plain number like "120,000" or "120000"
+    const plain = str.replace(/[^0-9.]/g, '');
+    return plain ? parseFloat(plain) : 0;
+  }
+  let num = parseFloat(match[1]);
+  if (match[2] && match[2].startsWith('m')) {
+    num *= 1000000;
+  }
+  return num;
+}
+
+// Proportional radius in meters based on displaced population (sqrt scale)
+function getRadius(displacedStr) {
+  const num = parseDisplacedNumber(displacedStr);
+  if (!num) return 30000; // default 30km
+  // sqrt scale: 14M → ~337km radius, 50K → ~20km
+  return Math.max(20000, Math.sqrt(num) * 90);
+}
+
+// Animated pulse for critical conflicts
+function addPulse(map, lat, lng, color) {
+  let phase = 0;
+  const baseRadius = 50000;
+  const pulse = L.circle([lat, lng], {
+    radius: baseRadius,
+    color: color,
+    fillColor: color,
+    fillOpacity: 0.3,
+    weight: 0,
+    interactive: false,
+  });
+  pulse.addTo(map);
+  const interval = setInterval(() => {
+    phase = (phase + 0.05) % (Math.PI * 2);
+    const scale = 1 + Math.sin(phase) * 0.5;
+    pulse.setRadius(baseRadius * scale);
+    pulse.setStyle({ fillOpacity: 0.15 + Math.sin(phase) * 0.15 });
+  }, 50);
+  pulseIntervals.push(interval);
+}
+
+// Draw connection arcs between related conflicts
+function addConnectionArcs(map, conflicts) {
+  const coordMap = {};
+  conflicts.forEach(c => {
+    if (c.lat && c.lng) {
+      coordMap[c.id] = [c.lat, c.lng];
+    }
+  });
+
+  const lines = [];
+  CONNECTIONS.forEach(([idA, idB]) => {
+    const a = coordMap[idA];
+    const b = coordMap[idB];
+    if (!a || !b) return;
+
+    // Create a curved arc using intermediate points
+    const midLat = (a[0] + b[0]) / 2;
+    const midLng = (a[1] + b[1]) / 2;
+    // Offset the midpoint perpendicular to the line for a slight curve
+    const dx = b[1] - a[1];
+    const dy = b[0] - a[0];
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    const offset = dist * 0.15;
+    const curveLat = midLat + (dx / dist) * offset;
+    const curveLng = midLng - (dy / dist) * offset;
+
+    const line = L.polyline(
+      [a, [curveLat, curveLng], b],
+      {
+        weight: 1,
+        opacity: 0.12,
+        color: '#4ecdc4',
+        dashArray: '4 8',
+        smoothFactor: 2,
+        interactive: false,
+      }
+    );
+    lines.push(line);
+  });
+
+  const connectionLayer = L.layerGroup(lines);
+  connectionLayer.addTo(map);
+  return connectionLayer;
+}
 
 export function createGlobalMap(containerId, conflicts) {
   const container = document.getElementById(containerId);
@@ -54,19 +162,23 @@ export function createGlobalMap(containerId, conflicts) {
     .addAttribution(TILE_ATTRIBUTION)
     .addTo(globalMap);
 
+  // Add connection arcs (drawn first so they appear beneath markers)
+  addConnectionArcs(globalMap, conflicts);
+
   // Add conflict markers
   conflicts.forEach(c => {
     if (!c.lat || !c.lng) return;
     const cfg = SEVERITY_CONFIG[c.severity] || SEVERITY_CONFIG.medium;
+    const meterRadius = getRadius(c.displaced);
 
-    const marker = L.circleMarker([c.lat, c.lng], {
-      radius: cfg.radius,
+    // Proportional circle (meters-based, scales with zoom)
+    const marker = L.circle([c.lat, c.lng], {
+      radius: meterRadius,
       color: cfg.color,
       fillColor: cfg.color,
-      fillOpacity: 0.5,
-      weight: 2,
-      opacity: 0.8,
-      className: cfg.pulse ? 'pulse-marker' : '',
+      fillOpacity: 0.25,
+      weight: 1.5,
+      opacity: 0.6,
     });
 
     marker.bindPopup(createPopup(c), {
@@ -81,6 +193,11 @@ export function createGlobalMap(containerId, conflicts) {
 
     marker.addTo(globalMap);
     markers.push({ marker, conflict: c });
+
+    // Animated pulse for critical severity
+    if (cfg.pulse) {
+      addPulse(globalMap, c.lat, c.lng, cfg.color);
+    }
   });
 
   // Enable scroll zoom on click

@@ -3,6 +3,7 @@
 // ============================================
 
 import { navigate } from '../router.js';
+import { icon } from './icons.js';
 
 // ---- Cause Categories (Overview) ----
 export function renderCauseCategories(container, categories) {
@@ -35,8 +36,8 @@ export function renderConflicts(container, conflicts, filter = 'all') {
       <div class="conflict-region">${c.region}</div>
       <p class="conflict-summary">${c.summary}</p>
       <div class="conflict-meta">
-        <span class="meta-tag">📅 ${c.started}</span>
-        ${c.displaced !== 'N/A' ? `<span class="meta-tag">🏠 ${c.displaced} displaced</span>` : ''}
+        <span class="meta-tag">${icon('calendar', 'icon-sm')} ${c.started}</span>
+        ${c.displaced !== 'N/A' ? `<span class="meta-tag">${icon('home-broken', 'icon-sm')} ${c.displaced} displaced</span>` : ''}
       </div>
       <div class="conflict-tags">
         ${c.causes.map(tag => `<span class="cause-tag">${tag}</span>`).join('')}
@@ -74,7 +75,7 @@ export function renderRootCauses(container, causes) {
           <h3>${cause.title}</h3>
           <p>${cause.shortDesc}</p>
         </div>
-        <button class="cause-toggle" aria-label="Expand">&#9660;</button>
+        <button class="cause-toggle" aria-label="Expand">${icon('chevron-down', 'icon-sm')}</button>
       </div>
       <div class="cause-body">
         <div class="cause-body-inner">
@@ -159,11 +160,11 @@ export function renderApplyLessons(container, lessons) {
   container.innerHTML = lessons.map(a => `
     <div class="apply-card fade-in">
       <div class="apply-current">
-        <h3>🔴 Today: ${a.current}</h3>
+        <h3>${icon('warning', 'icon-sm')} Today: ${a.current}</h3>
         <p><strong>Historical Parallel:</strong> ${a.historical}</p>
       </div>
       <div class="apply-historical">
-        <h3>🟢 Lesson We Can Apply</h3>
+        <h3>${icon('check', 'icon-sm')} Lesson We Can Apply</h3>
         <p>${a.lesson}</p>
       </div>
     </div>

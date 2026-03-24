@@ -2,15 +2,17 @@
 // Cause Categories & Root Causes Data
 // ============================================
 
+import { icon } from '../components/icons.js';
+
 export const causeCategories = [
-  { icon: '\u26FD', title: 'Resources & Territory', desc: 'Oil, water, minerals, land, and strategic access points', color: '#e67e22' },
-  { icon: '\uD83D\uDC51', title: 'Power & Governance', desc: 'Authoritarian control, failed states, coups, and political exclusion', color: '#e74c3c' },
-  { icon: '\uD83D\uDD4A\uFE0F', title: 'Identity & Religion', desc: 'Ethnic tensions, sectarian divides, and cultural suppression', color: '#9b59b6' },
-  { icon: '\uD83C\uDFDB\uFE0F', title: 'Colonial Legacy', desc: 'Arbitrary borders, unresolved grievances, and institutional fractures', color: '#3498db' },
-  { icon: '\u2622\uFE0F', title: 'Nuclear & Arms', desc: 'Weapons proliferation, deterrence failures, and arms races', color: '#f1c40f' },
-  { icon: '\uD83D\uDCB0', title: 'Economic Inequality', desc: 'Poverty, corruption, resource extraction, and exploitation', color: '#1abc9c' },
-  { icon: '\uD83C\uDF0D', title: 'Geopolitical Rivalry', desc: 'Great power competition, proxy wars, and spheres of influence', color: '#2ecc71' },
-  { icon: '\uD83C\uDF21\uFE0F', title: 'Climate & Scarcity', desc: 'Drought, displacement, food insecurity driving instability', color: '#e74c3c' },
+  { icon: icon('fuel'), title: 'Resources & Territory', desc: 'Oil, water, minerals, land, and strategic access points', color: '#e67e22' },
+  { icon: icon('crown'), title: 'Power & Governance', desc: 'Authoritarian control, failed states, coups, and political exclusion', color: '#e74c3c' },
+  { icon: icon('dove'), title: 'Identity & Religion', desc: 'Ethnic tensions, sectarian divides, and cultural suppression', color: '#9b59b6' },
+  { icon: icon('columns'), title: 'Colonial Legacy', desc: 'Arbitrary borders, unresolved grievances, and institutional fractures', color: '#3498db' },
+  { icon: icon('radiation'), title: 'Nuclear & Arms', desc: 'Weapons proliferation, deterrence failures, and arms races', color: '#f1c40f' },
+  { icon: icon('coins'), title: 'Economic Inequality', desc: 'Poverty, corruption, resource extraction, and exploitation', color: '#1abc9c' },
+  { icon: icon('globe'), title: 'Geopolitical Rivalry', desc: 'Great power competition, proxy wars, and spheres of influence', color: '#2ecc71' },
+  { icon: icon('thermometer'), title: 'Climate & Scarcity', desc: 'Drought, displacement, food insecurity driving instability', color: '#e74c3c' },
 ];
 
 export const rootCauses = [

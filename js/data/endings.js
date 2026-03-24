@@ -2,9 +2,11 @@
 // How Wars End Data
 // ============================================
 
+import { icon } from '../components/icons.js';
+
 export const howWarsEnd = [
   {
-    icon: '\uD83E\uDD1D',
+    icon: icon('handshake'),
     title: 'Negotiated Settlement',
     color: '#2ecc71',
     desc: 'The most durable path to peace. Both sides agree to compromise through structured talks, often with international mediation. Research shows negotiated settlements, when properly implemented, last longer than military victories.',
@@ -13,7 +15,7 @@ export const howWarsEnd = [
     successColor: '#2ecc71',
   },
   {
-    icon: '\uD83C\uDFDB\uFE0F',
+    icon: icon('columns'),
     title: 'International Mediation & Institutions',
     color: '#3498db',
     desc: 'Third-party mediators \u2014 the UN, regional organizations, or trusted nations \u2014 provide neutral ground, build confidence, and help parties find solutions they couldn\'t reach alone. International peacekeeping reduces recurrence of violence by 50%.',
@@ -22,7 +24,7 @@ export const howWarsEnd = [
     successColor: '#3498db',
   },
   {
-    icon: '\uD83D\uDCB0',
+    icon: icon('coins'),
     title: 'Economic Interdependence',
     color: '#1abc9c',
     desc: 'Making war too economically costly. The European Union was explicitly designed to make war between France and Germany impossible by binding their economies together. Trade creates shared interests that make conflict irrational.',
@@ -31,7 +33,7 @@ export const howWarsEnd = [
     successColor: '#1abc9c',
   },
   {
-    icon: '\u2696\uFE0F',
+    icon: icon('scales'),
     title: 'Truth, Justice & Reconciliation',
     color: '#9b59b6',
     desc: 'Addressing the past without endless cycles of revenge. Truth commissions, war crimes tribunals, and community-based justice help societies acknowledge what happened, hold perpetrators accountable, and build a foundation for coexistence.',
@@ -40,7 +42,7 @@ export const howWarsEnd = [
     successColor: '#9b59b6',
   },
   {
-    icon: '\uD83C\uDFD7\uFE0F',
+    icon: icon('construction'),
     title: 'Post-Conflict Reconstruction',
     color: '#e67e22',
     desc: 'Investing in rebuilding destroyed societies \u2014 infrastructure, institutions, education, health. The Marshall Plan after WWII demonstrated that generous reconstruction of former enemies creates lasting peace and prosperous allies.',
@@ -49,7 +51,7 @@ export const howWarsEnd = [
     successColor: '#e67e22',
   },
   {
-    icon: '\uD83D\uDD04',
+    icon: icon('users-plus'),
     title: 'Power-Sharing Arrangements',
     color: '#f1c40f',
     desc: 'When divided societies can\'t agree on who governs, structured power-sharing ensures all major groups have a voice. This can break zero-sum politics where one group\'s win is another\'s loss.',
