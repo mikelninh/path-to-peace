@@ -1,0 +1,53 @@
+/* ============================================
+   THE PATH TO PEACE — Design System
+   ============================================ */
+
+:root {
+  /* Colors */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a28;
+  --bg-card: #16161f;
+  --bg-card-hover: #1e1e2a;
+  --bg-elevated: #1f1f2e;
+
+  --text-primary: #e8e8ed;
+  --text-secondary: #a0a0b0;
+  --text-muted: #6b6b7b;
+  --text-accent: #f0f0f5;
+
+  --accent-red: #e74c3c;
+  --accent-red-dim: #c0392b;
+  --accent-orange: #e67e22;
+  --accent-yellow: #f1c40f;
+  --accent-green: #2ecc71;
+  --accent-blue: #3498db;
+  --accent-purple: #9b59b6;
+  --accent-teal: #1abc9c;
+  --accent-peace: #4ecdc4;
+  --accent-hope: #f7dc6f;
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(78, 205, 196, 0.3);
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 30px rgba(78, 205, 196, 0.1);
+
+  /* Severity Colors */
+  --severity-critical: #e74c3c;
+  --severity-high: #e67e22;
+  --severity-medium: #f1c40f;
+  --severity-low: #2ecc71;
+  --severity-tension: #3498db;
+
+  /* Typography */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  /* Spacing */
+  --section-pad: 120px;
+  --container-max: 1200px;
+}

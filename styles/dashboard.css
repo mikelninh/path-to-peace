@@ -1,0 +1,130 @@
+/* ============================================
+   Data Dashboard
+   ============================================ */
+.section-dashboard {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.dashboard-card-small {
+  /* Keep same */
+}
+
+.dashboard-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  margin-bottom: 6px;
+}
+
+.dashboard-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.dashboard-chart {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dashboard-chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.bar-chart text {
+  font-family: var(--font-body);
+}
+
+/* Severity distribution */
+.severity-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.severity-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.severity-label {
+  width: 70px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.severity-bar-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.severity-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.severity-count {
+  width: 24px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  text-align: right;
+}
+
+/* Numbers grid */
+.dashboard-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-number {
+  text-align: center;
+  padding: 16px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+
+.dash-num-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-peace);
+  line-height: 1.2;
+}
+
+.dash-num-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
