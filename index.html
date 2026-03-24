@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Path to Peace — Understanding World Conflicts</title>
+  <meta name="description" content="A comprehensive resource documenting current and historical world conflicts, their root causes, lessons learned, and evidence-based paths to lasting peace.">
+  <meta property="og:title" content="The Path to Peace — Understanding World Conflicts">
+  <meta property="og:description" content="Understand why we fight, what we've learned, and how we can build lasting peace for everyone.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">&#9774;</span>
+        <span class="logo-text">The Path to Peace</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#current" data-section="current">Current Conflicts</a></li>
+        <li><a href="#root-causes" data-section="root-causes">Root Causes</a></li>
+        <li><a href="#historical" data-section="historical">Historical Lessons</a></li>
+        <li><a href="#how-wars-end" data-section="how-wars-end">How Wars End</a></li>
+        <li><a href="#patterns" data-section="patterns">Patterns</a></li>
+        <li><a href="#path-forward" data-section="path-forward">Path Forward</a></li>
+        <li><a href="#take-action" data-section="take-action" class="nav-action-btn">Take Action</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">An Open Educational Resource</p>
+      <h1 class="hero-title">
+        <span class="hero-line-1">Understanding Why</span>
+        <span class="hero-line-2">We Fight</span>
+        <span class="hero-line-3">And How We Can Stop</span>
+      </h1>
+      <p class="hero-subtitle">
+        Right now, dozens of armed conflicts rage across our world. Millions suffer.
+        But history shows us — every war eventually ends. This resource documents what we're
+        fighting about, why, and most importantly, the proven paths to lasting peace.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number" id="stat-active">56+</span>
+          <span class="stat-label">Active Conflicts</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">110M+</span>
+          <span class="stat-label">Displaced People</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Of Past Wars Ended</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#current" class="btn btn-primary">Explore Current Conflicts</a>
+        <a href="#how-wars-end" class="btn btn-secondary">How Wars End</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Overview / Key Message -->
+  <section id="overview" class="section section-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text">
+          <h2>The Truth About War</h2>
+          <p class="lead">War is not inevitable. It is a choice — made by leaders, driven by systems, and sustained by narratives. Every conflict in human history has had identifiable causes, and every single one has eventually ended.</p>
+          <p>This website exists because understanding is the first step toward change. When we see the patterns clearly — what triggers wars, who benefits, who suffers, and what actually works to end them — we gain the power to choose differently.</p>
+          <p>This resource is free, open, and designed for everyone: students seeking to understand, teachers building curricula, journalists providing context, policymakers seeking precedent, and citizens demanding peace.</p>
+        </div>
+        <div class="overview-categories">
+          <h3>What Are We Fighting About?</h3>
+          <div class="category-cards" id="cause-categories">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Conflicts -->
+  <section id="current" class="section section-current">
+    <div class="container">
+      <div class="section-header">
+        <h2>Current World Conflicts</h2>
+        <p class="section-desc">Active armed conflicts causing significant casualties and displacement as of 2025. Each one has specific causes, actors, and potential paths to resolution.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Conflicts</button>
+        <button class="filter-btn" data-filter="war">Major Wars</button>
+        <button class="filter-btn" data-filter="civil-war">Civil Wars</button>
+        <button class="filter-btn" data-filter="insurgency">Insurgencies</button>
+        <button class="filter-btn" data-filter="tension">Tensions</button>
+      </div>
+
+      <div class="conflicts-grid" id="current-conflicts">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Conflict Detail Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="conflict-modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Root Causes Deep Dive -->
+  <section id="root-causes" class="section section-causes">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Root Causes of Conflict</h2>
+        <p class="section-desc">Wars don't start in a vacuum. They emerge from overlapping pressures — resource scarcity, identity politics, power struggles, historical grievances, and systemic failures. Understanding these roots is essential to prevention.</p>
+      </div>
+      <div class="causes-deep-dive" id="causes-deep-dive">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Historical Conflicts & Lessons -->
+  <section id="historical" class="section section-historical">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lessons From History</h2>
+        <p class="section-desc">Every past conflict carries lessons — about what caused it, what prolonged it, and crucially, what finally ended it. These lessons are our most valuable guide for resolving today's conflicts.</p>
+      </div>
+
+      <div class="timeline" id="historical-timeline">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- How Wars End -->
+  <section id="how-wars-end" class="section section-endings">
+    <div class="container">
+      <div class="section-header">
+        <h2>How Wars Actually End</h2>
+        <p class="section-desc">The most important question: what actually works? History provides clear evidence about the mechanisms that bring conflicts to a close and the conditions that make peace last.</p>
+      </div>
+
+      <div class="endings-grid" id="endings-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Patterns -->
+  <section id="patterns" class="section section-patterns">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Patterns We See</h2>
+        <p class="section-desc">When we study all conflicts together — current and historical — clear patterns emerge. These patterns are our roadmap.</p>
+      </div>
+
+      <div class="patterns-content" id="patterns-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Path Forward -->
+  <section id="path-forward" class="section section-forward">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Path Forward</h2>
+        <p class="section-desc">Based on everything we know from history and current research, these are the proven, evidence-based approaches to building lasting peace.</p>
+      </div>
+
+      <div class="forward-content" id="forward-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Applying Lessons -->
+  <section id="apply" class="section section-apply">
+    <div class="container">
+      <div class="section-header">
+        <h2>Applying History to Today</h2>
+        <p class="section-desc">For each current conflict, what historical parallels exist? What solutions worked before that could work again?</p>
+      </div>
+      <div class="apply-grid" id="apply-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Can Do -->
+  <section id="take-action" class="section section-action">
+    <div class="container">
+      <div class="section-header">
+        <h2>What You Can Do</h2>
+        <p class="section-desc">Peace is not built by governments alone. It requires informed, active citizens who understand the truth and demand better. Here are concrete actions you can take — starting today.</p>
+      </div>
+      <div class="action-grid" id="action-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="section section-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Peace Is Not a Dream. It's a Decision.</h2>
+        <p>Every war in human history has ended. The question is not <em>whether</em> current conflicts will end, but <em>how</em> — and at what cost. The knowledge in these pages shows us that we have the tools, the precedents, and the understanding to choose peace. What we need is the collective will to act.</p>
+        <div class="cta-actions">
+          <p class="cta-share">Share this resource with your community. Teach with it. Send it to your representatives. Use it to start a conversation. Peace starts with understanding — and understanding starts here.</p>
+        </div>
+        <blockquote class="cta-quote">
+          <p>"Peace is not merely a distant goal that we seek, but a means by which we arrive at that goal."</p>
+          <cite>— Martin Luther King Jr.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3><span class="logo-icon">&#9774;</span> The Path to Peace</h3>
+          <p>An open educational resource. Free to use, share, and teach with. Data sourced from UCDP, ACLED, SIPRI, ICG, UN agencies, and peer-reviewed research.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#current">Current Conflicts</a></li>
+            <li><a href="#root-causes">Root Causes</a></li>
+            <li><a href="#historical">Historical Lessons</a></li>
+            <li><a href="#how-wars-end">How Wars End</a></li>
+            <li><a href="#patterns">Patterns</a></li>
+            <li><a href="#path-forward">Path Forward</a></li>
+          </ul>
+        </div>
+        <div class="footer-sources">
+          <h4>Key Sources</h4>
+          <ul>
+            <li>Uppsala Conflict Data Program (UCDP)</li>
+            <li>Armed Conflict Location & Event Data (ACLED)</li>
+            <li>Stockholm International Peace Research Institute (SIPRI)</li>
+            <li>International Crisis Group (ICG)</li>
+            <li>United Nations OCHA & UNHCR</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>This is an open educational resource. All content is provided for educational purposes to promote understanding and peace.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
