@@ -35,6 +35,7 @@ import historicalRoutes from './routes/historical.js';
 import statsRoutes from './routes/stats.js';
 import educationRoutes from './routes/education.js';
 import healthRoutes from './routes/health.js';
+import chatRoutes from './routes/chat.js';
 
 // ============================================
 // DESIGN DECISION: ES Modules vs CommonJS
@@ -126,6 +127,7 @@ app.use('/api/v1/historical', historicalRoutes);
 app.use('/api/v1/stats', statsRoutes);
 app.use('/api/v1/education', educationRoutes);
 app.use('/api/v1/health', healthRoutes);
+app.use('/api/v1/chat', chatRoutes);
 
 // ============================================
 // CATCH-ALL: Serve frontend for non-API routes

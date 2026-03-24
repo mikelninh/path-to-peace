@@ -10,6 +10,8 @@
     "db:seed": "node src/db/seed.js",
     "db:reset": "node src/db/migrate.js && node src/db/seed.js",
     "db:backup": "node src/services/backup.js",
+    "ai:build-index": "node -e \"import('dotenv/config').then(()=>import('./src/services/embeddings.js').then(m=>m.buildEmbeddingIndex()))\"",
+    "ai:status": "node -e \"import('dotenv/config').then(()=>import('./src/services/embeddings.js').then(m=>{m.ensureEmbeddingsTable();const{getDb}=await import('./src/db/connection.js');const c=getDb().prepare('SELECT COUNT(*) as c FROM embeddings').get();console.log('Embeddings:',c.c)}))\"",
     "test": "node --test src/**/*.test.js"
   },
   "keywords": [
@@ -22,6 +24,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
     "better-sqlite3": "^12.8.0",
     "compression": "^1.8.1",
     "cors": "^2.8.6",
@@ -29,6 +32,7 @@
     "express": "^5.2.1",
     "helmet": "^8.1.0",
     "morgan": "^1.10.1",
+    "openai": "^6.32.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
