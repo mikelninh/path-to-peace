@@ -1,0 +1,35 @@
+.act-divider {
+  padding: 60px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.act-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-peace), transparent);
+}
+
+.act-divider blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.act-divider cite {
+  display: block;
+  font-size: 0.78rem;
+  font-style: normal;
+  color: var(--text-muted);
+  opacity: 0.6;
+  margin-top: 8px;
+}

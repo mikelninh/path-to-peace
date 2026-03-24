@@ -2,9 +2,11 @@
 // What You Can Do (Actions) Data
 // ============================================
 
+import { icon } from '../components/icons.js';
+
 export const takeActions = [
   {
-    icon: '\uD83D\uDCDA',
+    icon: icon('book'),
     title: 'Educate Yourself & Others',
     color: '#3498db',
     urgency: 'Start today',
@@ -19,7 +21,7 @@ export const takeActions = [
     ]
   },
   {
-    icon: '\uD83D\uDCE3',
+    icon: icon('megaphone'),
     title: 'Demand Action From Your Leaders',
     color: '#e74c3c',
     urgency: 'Most impactful',
@@ -34,7 +36,7 @@ export const takeActions = [
     ]
   },
   {
-    icon: '\uD83E\uDD1D',
+    icon: icon('handshake'),
     title: 'Support Peace Organizations',
     color: '#2ecc71',
     urgency: 'Immediate impact',
@@ -49,7 +51,7 @@ export const takeActions = [
     ]
   },
   {
-    icon: '\uD83D\uDED2',
+    icon: icon('cart'),
     title: 'Use Your Economic Power',
     color: '#e67e22',
     urgency: 'Everyday action',
@@ -64,7 +66,7 @@ export const takeActions = [
     ]
   },
   {
-    icon: '\uD83D\uDCAC',
+    icon: icon('speech'),
     title: 'Build Bridges, Not Walls',
     color: '#9b59b6',
     urgency: 'Daily practice',
@@ -79,7 +81,7 @@ export const takeActions = [
     ]
   },
   {
-    icon: '\uD83C\uDFEB',
+    icon: icon('school'),
     title: 'For Educators & Schools',
     color: '#1abc9c',
     urgency: 'Shape the future',

@@ -17,6 +17,7 @@
 // it injects its own HTML and manages its own state.
 
 import { quickAnswers, sectionCategoryMap } from '../data/quick-answers.js';
+import { icon } from './icons.js';
 
 // API base URL — points to the backend server
 const API_BASE = window.PEACE_API_URL || 'http://localhost:3001';
@@ -125,7 +126,7 @@ function injectHTML() {
           rows="1"
         ></textarea>
         <button class="chat-send" id="chat-send" disabled aria-label="Send">
-          ▶
+          <svg class="icon"><use href="#icon-arrow-right"/></svg>
         </button>
       </div>
     </div>
