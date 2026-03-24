@@ -64,6 +64,17 @@
   background: rgba(255,255,255,0.05);
 }
 
+.nav-links a.nav-edu-btn {
+  color: var(--accent-hope);
+  font-weight: 600;
+  border: 1px solid rgba(247, 220, 111, 0.3);
+}
+
+.nav-links a.nav-edu-btn:hover {
+  background: rgba(247, 220, 111, 0.1);
+  color: var(--accent-hope);
+}
+
 .nav-links a.nav-action-btn {
   background: var(--accent-peace);
   color: var(--bg-primary);

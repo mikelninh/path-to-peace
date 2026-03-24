@@ -1,5 +1,5 @@
 // ============================================
-// THE PATH TO PEACE v2 — Main Entry Point
+// THE PATH TO PEACE v3 — Main Entry Point
 // ============================================
 
 import { currentConflicts } from './data/conflicts-current.js';
@@ -29,6 +29,15 @@ import { renderConflictDetail } from './components/detail-view.js';
 import { renderDashboard } from './components/dashboard.js';
 import { initScrollytelling } from './components/scrollytelling.js';
 
+// v3: Education imports (lazy loaded on route)
+let educationData = null;
+async function getEducationData() {
+  if (!educationData) {
+    educationData = await import('./data/education.js');
+  }
+  return educationData;
+}
+
 // ---- Initialize everything on DOM ready ----
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -52,15 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Filters
   initFilters(currentConflicts);
 
-  // Router (handles #/conflict/:id navigation)
-  initRouter((route, id) => {
+  // Router (handles all routes)
+  initRouter(async (route, id) => {
+    const container = document.getElementById('detail-container');
+
     if (route === 'conflict' && id) {
-      renderConflictDetail(
-        id,
-        document.getElementById('detail-container'),
-        currentConflicts,
-        applyLessons
-      );
+      renderConflictDetail(id, container, currentConflicts, applyLessons);
+    } else if (route === 'educators') {
+      const { lessonPlans, learningModules, quizzes, discussionGuides } = await getEducationData();
+      const { renderEducatorsHub } = await import('./components/educators.js');
+      renderEducatorsHub(container, lessonPlans, learningModules, quizzes);
+    } else if (route === 'lesson' && id) {
+      const { lessonPlans, discussionGuides } = await getEducationData();
+      const { renderLessonDetail } = await import('./components/educators.js');
+      renderLessonDetail(id, container, lessonPlans, discussionGuides);
+    } else if (route === 'module' && id) {
+      const { learningModules } = await getEducationData();
+      const { renderModule } = await import('./components/learning-module.js');
+      renderModule(id, container, learningModules);
+    } else if (route === 'quiz' && id) {
+      const { quizzes } = await getEducationData();
+      const { renderQuiz } = await import('./components/quiz.js');
+      renderQuiz(id, container, quizzes);
     }
   });
 

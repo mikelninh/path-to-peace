@@ -1,5 +1,5 @@
 // ============================================
-// Hash Router — #/ and #/conflict/:id
+// Hash Router — Extended for v3
 // ============================================
 
 let currentRoute = '/';
@@ -26,20 +26,40 @@ function handleRoute() {
   const mainContent = document.getElementById('main-content');
   const detailContainer = document.getElementById('detail-container');
 
+  // Determine route type
+  let route = 'home';
+  let id = null;
+
   if (hash.startsWith('/conflict/')) {
-    const id = hash.split('/conflict/')[1];
-    if (mainContent) mainContent.style.display = 'none';
-    if (detailContainer) {
-      detailContainer.style.display = 'block';
-      detailContainer.scrollIntoView({ behavior: 'instant' });
-    }
-    if (onRouteChange) onRouteChange('conflict', id);
-  } else {
+    route = 'conflict';
+    id = hash.split('/conflict/')[1];
+  } else if (hash.startsWith('/educators')) {
+    route = 'educators';
+  } else if (hash.startsWith('/lesson/')) {
+    route = 'lesson';
+    id = hash.split('/lesson/')[1];
+  } else if (hash.startsWith('/module/')) {
+    route = 'module';
+    id = hash.split('/module/')[1];
+  } else if (hash.startsWith('/quiz/')) {
+    route = 'quiz';
+    id = hash.split('/quiz/')[1];
+  }
+
+  // Show/hide containers
+  if (route === 'home') {
     if (mainContent) mainContent.style.display = '';
     if (detailContainer) {
       detailContainer.style.display = 'none';
       detailContainer.innerHTML = '';
     }
-    if (onRouteChange) onRouteChange('home', null);
+  } else {
+    if (mainContent) mainContent.style.display = 'none';
+    if (detailContainer) {
+      detailContainer.innerHTML = '';
+      detailContainer.style.display = 'block';
+    }
   }
+
+  if (onRouteChange) onRouteChange(route, id);
 }
