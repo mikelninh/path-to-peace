@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Database files (contain data, not code)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Backups (large, should be in cloud storage not git)
+backups/
+
+# Environment (contains secrets)
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

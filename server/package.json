@@ -1,0 +1,37 @@
+{
+  "name": "path-to-peace-api",
+  "version": "1.0.0",
+  "description": "Backend API for The Path to Peace — conflict education platform",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db:migrate": "node src/db/migrate.js",
+    "db:seed": "node src/db/seed.js",
+    "db:reset": "node src/db/migrate.js && node src/db/seed.js",
+    "db:backup": "node src/services/backup.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": [
+    "peace",
+    "conflicts",
+    "education",
+    "api"
+  ],
+  "author": "mikelninh",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
