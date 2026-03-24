@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Render all sections
   renderCauseCategories(document.getElementById('cause-categories'), causeCategories);
-  renderConflicts(document.getElementById('current-conflicts'), currentConflicts);
+  renderConflicts(document.getElementById('current-conflicts'), currentConflicts, 'all', 3);
   renderRootCauses(document.getElementById('causes-deep-dive'), rootCauses);
   renderHistoricalTimeline(document.getElementById('historical-timeline'), historicalConflicts);
   renderEndings(document.getElementById('endings-grid'), howWarsEnd);

@@ -296,3 +296,25 @@
 .conflict-card:hover .learn-more::after {
   transform: translateX(4px);
 }
+
+/* ============================================
+   Show All / Progressive Disclosure
+   ============================================ */
+.show-all-container {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.show-all-btn {
+  gap: 8px;
+}
+
+/* Featured card variant (first N cards in limited mode) */
+.conflict-card.featured {
+  padding: 32px;
+}
+
+.conflict-card.featured .conflict-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}

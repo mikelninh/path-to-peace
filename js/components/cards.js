@@ -20,15 +20,22 @@ export function renderCauseCategories(container, categories) {
 }
 
 // ---- Current Conflicts Grid ----
-export function renderConflicts(container, conflicts, filter = 'all') {
+export function renderConflicts(container, conflicts, filter = 'all', limit = null) {
   if (!container) return;
 
   const filtered = filter === 'all'
     ? conflicts
     : conflicts.filter(c => c.type === filter);
 
-  container.innerHTML = filtered.map(c => `
-    <div class="conflict-card fade-in" data-severity="${c.severity}" data-id="${c.id}">
+  const total = filtered.length;
+  const visible = limit ? filtered.slice(0, limit) : filtered;
+
+  // Clean up any existing "show all" button
+  const existingShowAll = container.parentElement.querySelector('.show-all-container');
+  if (existingShowAll) existingShowAll.remove();
+
+  container.innerHTML = visible.map((c, i) => `
+    <div class="conflict-card fade-in${limit && i < limit ? ' featured' : ''}" data-severity="${c.severity}" data-id="${c.id}" data-reveal="up">
       <div class="conflict-card-header">
         <h3>${c.name}</h3>
         <span class="severity-badge ${c.severity}">${c.severity}</span>
@@ -47,6 +54,23 @@ export function renderConflicts(container, conflicts, filter = 'all') {
       </div>
     </div>
   `).join('');
+
+  // Show "View all" button if limited
+  if (limit && total > limit) {
+    const showAllDiv = document.createElement('div');
+    showAllDiv.className = 'show-all-container';
+    showAllDiv.innerHTML = `
+      <button class="btn btn-secondary show-all-btn" data-reveal="up">
+        View all ${total} conflicts <svg class="icon icon-sm"><use href="#icon-arrow-right"/></svg>
+      </button>
+    `;
+    container.parentElement.appendChild(showAllDiv);
+
+    showAllDiv.querySelector('.show-all-btn').addEventListener('click', () => {
+      showAllDiv.remove();
+      renderConflicts(container, conflicts, filter);
+    });
+  }
 
   // Attach click handlers
   container.querySelectorAll('.conflict-card').forEach(card => {
