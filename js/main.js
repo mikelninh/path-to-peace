@@ -28,6 +28,7 @@ import { createGlobalMap } from './components/map.js';
 import { renderConflictDetail } from './components/detail-view.js';
 import { renderDashboard } from './components/dashboard.js';
 import { initScrollytelling } from './components/scrollytelling.js';
+import { initChatWidget } from './components/chat-widget.js';
 
 // v3: Education imports (lazy loaded on route)
 let educationData = null;
@@ -43,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Navigation
   initNav();
+
+  // AI Chat Widget (floating bubble)
+  initChatWidget();
 
   // Render all sections
   renderCauseCategories(document.getElementById('cause-categories'), causeCategories);
