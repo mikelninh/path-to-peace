@@ -1,0 +1,184 @@
+/* ============================================
+   Methodology & Sources
+   ============================================ */
+.method-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 24px 60px;
+}
+
+/* Hero */
+.method-hero {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.method-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-accent);
+  margin-bottom: 16px;
+}
+
+.method-hero p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+/* Sections */
+.method-section {
+  margin-bottom: 48px;
+}
+
+.method-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--accent-peace);
+  margin-bottom: 16px;
+}
+
+.method-section p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+/* Principles Grid */
+.method-principles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.method-principle {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.method-principle h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  margin-bottom: 8px;
+}
+
+.method-principle p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Sources */
+.method-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.method-source {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+.method-source h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  margin-bottom: 4px;
+}
+
+.method-source p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.method-source-affil {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.method-source-url {
+  font-size: 0.82rem;
+  color: var(--accent-peace);
+  text-decoration: none;
+  word-break: break-all;
+  transition: opacity 0.2s;
+}
+
+.method-source-url:hover {
+  opacity: 0.8;
+}
+
+/* Styled List with Teal Checkmarks */
+.method-list {
+  list-style: none;
+  padding: 0;
+}
+
+.method-list li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.method-list li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--accent-peace);
+  font-weight: 700;
+}
+
+/* Error/Correction Box */
+.method-error-box {
+  background: rgba(78, 205, 196, 0.04);
+  border: 1px solid rgba(78, 205, 196, 0.12);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.method-error-box h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-peace);
+  margin-bottom: 12px;
+}
+
+.method-error-box p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.method-error-box a {
+  color: var(--accent-peace);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.method-error-box a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .method-principles {
+    grid-template-columns: 1fr;
+  }
+}

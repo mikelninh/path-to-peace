@@ -1,0 +1,308 @@
+/* ============================================
+   Peace Progress Tracker
+   ============================================ */
+.peace-page {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 80px 24px 60px;
+}
+
+/* Hero */
+.peace-hero {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.peace-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-accent);
+  margin-bottom: 16px;
+}
+
+.peace-hero p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+/* Overview Cards */
+.peace-overview {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.peace-overview-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.peace-overview-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+}
+
+.peace-overview-card.active {
+  border-color: var(--accent-peace);
+  background: rgba(78, 205, 196, 0.05);
+}
+
+.peace-overview-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.peace-overview-count {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-accent);
+  line-height: 1.2;
+}
+
+.peace-overview-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* Filters */
+.peace-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.peace-filter-btn {
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+}
+
+.peace-filter-btn:hover {
+  background: var(--bg-card-hover);
+}
+
+.peace-filter-btn.active {
+  background: var(--accent-peace);
+  color: var(--bg-primary);
+  border-color: var(--accent-peace);
+}
+
+/* Peace Cards Grid */
+.peace-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.peace-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+
+.peace-card:hover {
+  border-color: var(--border-medium);
+}
+
+.peace-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.peace-card-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  margin-bottom: 4px;
+}
+
+.peace-card-region {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Status Badge */
+.peace-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.peace-status-badge.active-peace {
+  background: rgba(46, 204, 113, 0.15);
+  color: var(--accent-green);
+}
+
+.peace-status-badge.stalled {
+  background: rgba(241, 196, 15, 0.15);
+  color: var(--accent-yellow);
+}
+
+.peace-status-badge.deteriorating {
+  background: rgba(231, 76, 60, 0.15);
+  color: var(--accent-red);
+}
+
+.peace-status-badge.early-stage {
+  background: rgba(52, 152, 219, 0.15);
+  color: var(--accent-blue);
+}
+
+/* Milestones */
+.peace-milestones {
+  border-left: 2px solid var(--border-subtle);
+  margin-left: 8px;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.peace-milestone {
+  position: relative;
+  padding: 8px 0 8px 24px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.peace-milestone::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-medium);
+}
+
+.peace-milestone.progress::before {
+  background: var(--accent-green);
+}
+
+.peace-milestone.stalled::before {
+  background: var(--accent-yellow);
+}
+
+.peace-milestone.setback::before {
+  background: var(--accent-red);
+}
+
+.peace-milestone-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+/* Needs Box */
+.peace-needs {
+  background: rgba(78, 205, 196, 0.04);
+  border: 1px solid rgba(78, 205, 196, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.peace-needs h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-peace);
+  margin-bottom: 10px;
+}
+
+.peace-needs p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Actor Tags */
+.peace-actor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.peace-actor-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.04);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* Card Footer */
+.peace-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.peace-card-footer a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-peace);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.peace-card-footer a:hover {
+  opacity: 0.8;
+}
+
+.peace-card-footer span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .peace-overview {
+    flex-direction: column;
+  }
+
+  .peace-card {
+    padding: 20px;
+  }
+
+  .peace-card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

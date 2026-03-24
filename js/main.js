@@ -83,6 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const { quizzes } = await getEducationData();
       const { renderQuiz } = await import('./components/quiz.js');
       renderQuiz(id, container, quizzes);
+    } else if (route === 'write') {
+      const { renderWriteRep } = await import('./components/write-rep.js');
+      renderWriteRep(container, currentConflicts);
+    } else if (route === 'arms-trade') {
+      const { renderArmsTrade } = await import('./components/arms-trade-viz.js');
+      renderArmsTrade(container);
+    } else if (route === 'peace-progress') {
+      const { renderPeaceTracker } = await import('./components/peace-tracker.js');
+      renderPeaceTracker(container);
+    } else if (route === 'simulate') {
+      const { renderSimulator } = await import('./components/simulator.js');
+      renderSimulator(id, container);
+    } else if (route === 'methodology') {
+      const { renderMethodology } = await import('./components/methodology.js');
+      renderMethodology(container);
     }
   });
 
