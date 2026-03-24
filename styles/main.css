@@ -17,5 +17,9 @@
 @import 'peace-tracker.css';
 @import 'simulator.css';
 @import 'methodology.css';
+@import 'briefing.css';
+@import 'api-docs.css';
+@import 'state-of-peace.css';
+@import 'search.css';
 @import 'animations.css';
 @import 'responsive.css';

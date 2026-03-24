@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "russia-ukraine",
+    "name": "Russia–Ukraine War",
+    "region": "Eastern Europe",
+    "type": "war",
+    "severity": "critical",
+    "started": "February 2022 (roots in 2014)",
+    "displaced": "~14 million",
+    "casualties": "500,000+ military casualties (estimated)",
+    "summary": "Russia's full-scale invasion of Ukraine — the largest land war in Europe since 1945. A fight over sovereignty, NATO expansion, and the post-Cold War order.",
+    "causes": [
+      "Territory",
+      "Geopolitics",
+      "Identity",
+      "Security"
+    ],
+    "who": {
+      "sideA": "Russian Federation (with allied forces from Belarus, and recruited fighters)",
+      "sideB": "Ukraine (supported by NATO allies, EU military and financial aid)"
+    },
+    "why": "Russia views Ukraine's westward orientation and potential NATO membership as an existential threat to its security and sphere of influence. Ukraine asserts its sovereign right to choose its own alliances and future. Deeper roots include post-Soviet identity disputes, the status of Crimea (annexed by Russia in 2014), and the conflict in the Donbas region since 2014.",
+    "resources": "Ukraine holds significant agricultural land (one of the world's top grain exporters), energy transit pipelines, and mineral deposits including lithium and rare earths. Control of the Black Sea and Crimea provides strategic naval access.",
+    "whatAbout": "Sovereignty and territorial integrity vs. claimed security interests; the post-Cold War European security architecture; the right of nations to choose their own alliances; Russian-speaking populations in eastern Ukraine; energy politics and gas pipelines to Europe.",
+    "pathToResolution": "Ceasefire negotiations, security guarantees for both sides, territorial status discussions, reconstruction plans, accountability mechanisms, and a new European security framework. Historical parallels include the Helsinki Accords and post-WWII settlement.",
+    "impact": "Global food price spikes, European energy crisis, nuclear escalation fears, millions displaced, massive infrastructure destruction, and a fundamental reshaping of European security.",
+    "lat": 48.5,
+    "lng": 35,
+    "bounds": [
+      [
+        44,
+        22
+      ],
+      [
+        52,
+        40
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2014-02-27",
+        "title": "Russia annexes Crimea after unmarked troops seize government buildings",
+        "type": "escalation"
+      },
+      {
+        "date": "2015-02-12",
+        "title": "Minsk II ceasefire agreement signed but never fully implemented",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2022-02-24",
+        "title": "Russia launches full-scale invasion of Ukraine",
+        "type": "escalation"
+      },
+      {
+        "date": "2022-04-02",
+        "title": "Russian forces withdraw from Kyiv region; Bucha massacre discovered",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2022-09-11",
+        "title": "Ukraine launches successful Kharkiv counteroffensive",
+        "type": "escalation"
+      },
+      {
+        "date": "2022-11-11",
+        "title": "Ukraine liberates Kherson after Russian withdrawal",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-06-06",
+        "title": "Kakhovka Dam destroyed, causing massive flooding and ecological disaster",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2024-06-15",
+        "title": "Switzerland hosts global peace summit on Ukraine framework",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2014": 4800,
+        "2015": 3300,
+        "2016": 800,
+        "2017": 600,
+        "2018": 400,
+        "2019": 300,
+        "2020": 200,
+        "2021": 200,
+        "2022": 150000,
+        "2023": 180000,
+        "2024": 120000,
+        "2025": 50000
+      },
+      "displacedByYear": {
+        "2014": 1500000,
+        "2015": 1800000,
+        "2016": 1700000,
+        "2017": 1600000,
+        "2018": 1500000,
+        "2019": 1400000,
+        "2020": 1400000,
+        "2021": 1400000,
+        "2022": 14000000,
+        "2023": 11000000,
+        "2024": 10000000,
+        "2025": 9000000
+      }
+    }
+  },
+  {
+    "id": "israel-palestine",
+    "name": "Israel–Palestine Conflict",
+    "region": "Middle East",
+    "type": "war",
+    "severity": "critical",
+    "started": "October 2023 escalation (roots in 1948)",
+    "displaced": "~2.3 million in Gaza",
+    "casualties": "Tens of thousands killed in Gaza; 1,200+ killed in Israel on Oct. 7",
+    "summary": "One of the world's longest-running conflicts, dramatically escalated after the October 7, 2023 Hamas attack and Israel's subsequent military campaign in Gaza.",
+    "causes": [
+      "Territory",
+      "Identity",
+      "Self-determination",
+      "Security"
+    ],
+    "who": {
+      "sideA": "State of Israel (supported by the United States and Western allies)",
+      "sideB": "Hamas (governing Gaza since 2007), Palestinian civilians, broader Palestinian national movement"
+    },
+    "why": "Rooted in competing national claims to the same land. The 1948 establishment of Israel led to Palestinian displacement (the Nakba). Decades of occupation, settlement expansion, blockades, and failed peace processes have created cycles of violence. The October 7 attack and subsequent military response represent a catastrophic escalation of these unresolved tensions.",
+    "resources": "Control of land, water aquifers, and offshore gas fields. Jerusalem holds immense religious significance for Judaism, Islam, and Christianity. Strategic location at the crossroads of three continents.",
+    "whatAbout": "Palestinian statehood and self-determination; Israeli security; the status of Jerusalem; refugee right of return; settlement expansion in the West Bank; the blockade of Gaza; international law and human rights; the two-state solution vs. alternatives.",
+    "pathToResolution": "Immediate ceasefire and humanitarian access, hostage/prisoner negotiations, addressing root causes through a political framework that guarantees both Israeli security and Palestinian self-determination. Historical models include the Oslo process and the Good Friday Agreement's approach to shared sovereignty.",
+    "impact": "Massive humanitarian crisis in Gaza, regional destabilization (Hezbollah, Houthis), global protest movements, deep polarization, and challenges to international law frameworks.",
+    "lat": 31.5,
+    "lng": 34.5,
+    "bounds": [
+      [
+        29,
+        33
+      ],
+      [
+        33,
+        36
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1993-09-13",
+        "title": "Oslo Accords signed, establishing framework for Palestinian self-governance",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2005-09-12",
+        "title": "Israel completes withdrawal from Gaza Strip",
+        "type": "resolution"
+      },
+      {
+        "date": "2007-06-14",
+        "title": "Hamas takes control of Gaza after winning elections",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-10-07",
+        "title": "Hamas launches surprise attack on Israel, killing 1,200+",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-10-27",
+        "title": "Israel launches ground invasion of Gaza",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-11-24",
+        "title": "Temporary ceasefire and hostage exchange deal",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2024-01-26",
+        "title": "ICJ orders Israel to prevent acts of genocide in Gaza",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2024-05-20",
+        "title": "ICC prosecutor seeks arrest warrants for Israeli and Hamas leaders",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2008": 1500,
+        "2012": 200,
+        "2014": 2300,
+        "2018": 300,
+        "2021": 280,
+        "2023": 25000,
+        "2024": 35000,
+        "2025": 10000
+      },
+      "displacedByYear": {
+        "2008": 100000,
+        "2014": 500000,
+        "2021": 75000,
+        "2023": 1900000,
+        "2024": 2300000,
+        "2025": 2000000
+      }
+    }
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan Civil War",
+    "region": "East Africa",
+    "type": "civil-war",
+    "severity": "critical",
+    "started": "April 2023",
+    "displaced": "~10 million",
+    "casualties": "15,000+ killed (likely far higher)",
+    "summary": "A power struggle between two military factions has plunged Sudan into one of the world's worst humanitarian catastrophes, with famine, mass displacement, and widespread atrocities.",
+    "causes": [
+      "Power",
+      "Resources",
+      "Ethnic tensions",
+      "Colonial legacy"
+    ],
+    "who": {
+      "sideA": "Sudanese Armed Forces (SAF) led by Gen. Abdel Fattah al-Burhan",
+      "sideB": "Rapid Support Forces (RSF) led by Gen. Mohamed Hamdan \"Hemedti\" Dagalo"
+    },
+    "why": "After the 2019 revolution that ousted dictator Omar al-Bashir, a fragile military-civilian transition collapsed. The two most powerful military leaders — who had jointly staged a coup in 2021 — turned on each other in a fight for control of the state and its vast resources, including gold mines. The RSF evolved from the Janjaweed militias responsible for atrocities in Darfur.",
+    "resources": "Gold (Sudan is Africa's third-largest producer), agricultural land along the Nile, strategic Red Sea coast access, and oil. Control of these resources funds both warring parties.",
+    "whatAbout": "Control of the state; distribution of economic resources (especially gold); the future of democratic transition; ethnic and regional marginalization; accountability for past atrocities in Darfur; foreign interference from UAE, Egypt, Russia, and others.",
+    "pathToResolution": "Ceasefire enforcement, civilian protection, humanitarian access, inclusive political dialogue that includes civilian pro-democracy movements, arms embargo enforcement, and accountability for war crimes. The 2005 Comprehensive Peace Agreement (which led to South Sudan's independence) offers partial precedent.",
+    "impact": "World's largest displacement crisis, famine conditions, ethnic cleansing in Darfur, collapse of health and education systems, and regional refugee spillover.",
+    "lat": 15.5,
+    "lng": 32.5,
+    "bounds": [
+      [
+        8,
+        22
+      ],
+      [
+        23,
+        39
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2019-04-11",
+        "title": "Omar al-Bashir ousted after months of popular protests",
+        "type": "resolution"
+      },
+      {
+        "date": "2019-08-17",
+        "title": "Constitutional Declaration signed for civilian-military power sharing",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2021-10-25",
+        "title": "Military coup dissolves transitional government",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-04-15",
+        "title": "Fighting erupts between SAF and RSF in Khartoum",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-06-09",
+        "title": "Jeddah ceasefire talks begin between SAF and RSF",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2023-11-15",
+        "title": "Reports of ethnic cleansing in West Darfur emerge",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2024-03-15",
+        "title": "UN warns of catastrophic famine affecting millions",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2024-06-15",
+        "title": "RSF captures most of Darfur and expands southward",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2023": 12000,
+        "2024": 20000,
+        "2025": 15000
+      },
+      "displacedByYear": {
+        "2023": 6000000,
+        "2024": 10000000,
+        "2025": 12000000
+      }
+    }
+  },
+  {
+    "id": "myanmar",
+    "name": "Myanmar Civil War",
+    "region": "Southeast Asia",
+    "type": "civil-war",
+    "severity": "high",
+    "started": "February 2021 (ethnic conflicts since independence)",
+    "displaced": "~3 million",
+    "casualties": "Tens of thousands killed",
+    "summary": "Following the 2021 military coup that overthrew the elected government, a nationwide resistance movement has escalated into full civil war, with ethnic armed organizations joining the fight against the junta.",
+    "causes": [
+      "Power",
+      "Ethnic rights",
+      "Democracy",
+      "Colonial legacy"
+    ],
+    "who": {
+      "sideA": "Myanmar military junta (Tatmadaw) led by Gen. Min Aung Hlaing",
+      "sideB": "National Unity Government (NUG), People's Defense Forces (PDF), and numerous ethnic armed organizations (EAOs) including Kachin, Karen, Chin, Shan, and Arakan armies"
+    },
+    "why": "The military seized power to prevent a democratic transition that threatened its political and economic dominance. Deeper roots include decades of ethnic persecution (including the Rohingya genocide), military rule since 1962, and a constitution designed to guarantee military power. The resistance unites pro-democracy movements with long-standing ethnic autonomy struggles.",
+    "resources": "Jade and gemstones (Myanmar produces 90% of the world's jade), timber, natural gas, rare earth minerals. The military controls vast business empires through crony networks.",
+    "whatAbout": "Democracy vs. military rule; ethnic self-determination and federalism; the Rohingya crisis; military economic empire; drug production in the Golden Triangle; China's strategic interests.",
+    "pathToResolution": "The resistance aims for a federal democratic union. International pressure through sanctions, arms embargo, and diplomatic isolation of the junta. ASEAN's Five-Point Consensus has been ineffective. South Africa's transition from apartheid through negotiated settlement offers one model.",
+    "impact": "Humanitarian crisis, collapse of healthcare and education, narcotics production surge, regional instability, and a test case for whether democratic movements can prevail against entrenched military power.",
+    "lat": 19.7,
+    "lng": 96.1,
+    "bounds": [
+      [
+        10,
+        92
+      ],
+      [
+        28,
+        101
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2017-08-25",
+        "title": "Military launches operations against Rohingya, causing mass exodus",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2020-11-08",
+        "title": "NLD wins landslide election; military rejects results",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2021-02-01",
+        "title": "Military stages coup, detains Aung San Suu Kyi and civilian leaders",
+        "type": "escalation"
+      },
+      {
+        "date": "2021-04-16",
+        "title": "National Unity Government formed as parallel civilian authority",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2021-09-07",
+        "title": "NUG declares \"people's defensive war\" against the junta",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-10-27",
+        "title": "Operation 1027: Three Brotherhood Alliance launches major offensive in Shan State",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-11",
+        "title": "China brokers ceasefire in northern Shan State",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2024-04-02",
+        "title": "Resistance forces capture Myawaddy, key trade town on Thai border",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2021": 5000,
+        "2022": 8000,
+        "2023": 12000,
+        "2024": 15000,
+        "2025": 10000
+      },
+      "displacedByYear": {
+        "2021": 800000,
+        "2022": 1500000,
+        "2023": 2200000,
+        "2024": 3000000,
+        "2025": 3200000
+      }
+    }
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia: Post-Tigray & Ongoing Conflicts",
+    "region": "East Africa / Horn of Africa",
+    "type": "civil-war",
+    "severity": "high",
+    "started": "November 2020 (Tigray); ongoing conflicts in Amhara, Oromia",
+    "displaced": "~4.5 million internally",
+    "casualties": "600,000+ estimated deaths in Tigray war",
+    "summary": "While the devastating Tigray war ended with a 2022 ceasefire, Ethiopia faces ongoing armed conflicts in the Amhara and Oromia regions, threatening the country's unity and stability.",
+    "causes": [
+      "Ethnic federalism",
+      "Power",
+      "Land",
+      "Identity"
+    ],
+    "who": {
+      "sideA": "Ethiopian federal government under PM Abiy Ahmed (with Eritrean alliance)",
+      "sideB": "Various: Tigray People's Liberation Front (TPLF), Fano militias in Amhara, Oromo Liberation Army (OLA)"
+    },
+    "why": "Ethiopia's ethnic federal system, designed to manage diversity, has also entrenched ethnic identity as the primary political currency. PM Abiy's centralization efforts alienated multiple ethnic groups. The Tigray war was one of the deadliest conflicts of the 21st century. Now, former allies (Amhara Fano militias) have turned against the government, and the Oromo insurgency continues.",
+    "resources": "Agricultural land in one of Africa's most fertile regions, the Grand Ethiopian Renaissance Dam (control over Nile waters, disputed with Egypt and Sudan), minerals, and strategic Horn of Africa location.",
+    "whatAbout": "Ethnic self-determination vs. national unity; the future of ethnic federalism; land rights and displacement; Nile water access (GERD dispute); accountability for atrocities; Eritrea's role.",
+    "pathToResolution": "Implementation of the Pretoria Agreement (Tigray ceasefire), inclusive national dialogue, reform of the ethnic federal system, transitional justice mechanisms, and addressing root causes of marginalization. The Pretoria process itself offers a recent success model.",
+    "impact": "One of the deadliest conflicts of the 2020s, massive displacement, famine, destruction of Tigray's infrastructure, and regional destabilization.",
+    "lat": 13.5,
+    "lng": 39.5,
+    "bounds": [
+      [
+        3,
+        33
+      ],
+      [
+        15,
+        48
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2020-11-04",
+        "title": "Federal forces launch military operations in Tigray region",
+        "type": "escalation"
+      },
+      {
+        "date": "2021-06-28",
+        "title": "TPLF recaptures Mekelle; government declares ceasefire",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2021-11-02",
+        "title": "Tigray forces advance toward Addis Ababa; state of emergency declared",
+        "type": "escalation"
+      },
+      {
+        "date": "2022-03-24",
+        "title": "Government declares humanitarian truce",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2022-11-02",
+        "title": "Pretoria Agreement signed ending Tigray war",
+        "type": "resolution"
+      },
+      {
+        "date": "2023-04-15",
+        "title": "Government declares state of emergency in Amhara over Fano uprising",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-08-04",
+        "title": "Fano militias seize several cities in Amhara region",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-15",
+        "title": "Humanitarian aid access remains restricted in Tigray despite ceasefire",
+        "type": "humanitarian"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2020": 30000,
+        "2021": 250000,
+        "2022": 200000,
+        "2023": 50000,
+        "2024": 30000,
+        "2025": 20000
+      },
+      "displacedByYear": {
+        "2020": 1000000,
+        "2021": 3000000,
+        "2022": 4000000,
+        "2023": 4500000,
+        "2024": 4500000,
+        "2025": 4200000
+      }
+    }
+  },
+  {
+    "id": "yemen",
+    "name": "Yemen Civil War",
+    "region": "Middle East / Arabian Peninsula",
+    "type": "civil-war",
+    "severity": "high",
+    "started": "2014 (intensified 2015)",
+    "displaced": "~4.5 million",
+    "casualties": "377,000+ deaths (including from famine and disease)",
+    "summary": "A devastating civil war fueled by regional rivalries between Saudi Arabia and Iran, creating what the UN called the world's worst humanitarian crisis.",
+    "causes": [
+      "Power",
+      "Sectarian",
+      "Geopolitics",
+      "Resources"
+    ],
+    "who": {
+      "sideA": "Ansar Allah (Houthi movement), backed by Iran",
+      "sideB": "Internationally recognized government, backed by Saudi-led coalition (including UAE)"
+    },
+    "why": "Houthi insurgents from the Zaidi Shia north captured the capital Sana'a, overthrowing the transitional government. Saudi Arabia intervened militarily in 2015, framing the conflict as a proxy war against Iranian influence. Underlying causes include decades of north-south division, economic marginalization, corruption, and the failed political transition after the 2011 Arab Spring.",
+    "resources": "Modest oil and gas reserves, but strategic control of the Bab el-Mandeb strait (one of the world's most important shipping lanes). The Houthi Red Sea attacks since 2023 demonstrate this strategic leverage.",
+    "whatAbout": "Control of the Yemeni state; Saudi-Iran regional rivalry; Zaidi Shia identity and marginalization; the southern independence movement; control of shipping lanes; the war economy and fragmentation of armed groups.",
+    "pathToResolution": "UN-mediated peace process, Saudi-Houthi direct negotiations (ongoing), power-sharing arrangement, unified security forces, reconstruction, and addressing the humanitarian crisis. The 2023 Saudi-Iran rapprochement (brokered by China) opened new diplomatic space.",
+    "impact": "Catastrophic humanitarian crisis with famine, cholera epidemics, destruction of infrastructure, a generation of children out of school, and global shipping disruption.",
+    "lat": 15.5,
+    "lng": 44,
+    "bounds": [
+      [
+        12,
+        42
+      ],
+      [
+        19,
+        54
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2014-09-21",
+        "title": "Houthis seize control of Sana'a",
+        "type": "escalation"
+      },
+      {
+        "date": "2015-03-26",
+        "title": "Saudi-led coalition launches Operation Decisive Storm airstrikes",
+        "type": "escalation"
+      },
+      {
+        "date": "2016-04-10",
+        "title": "UN-brokered Kuwait peace talks begin",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2018-12-13",
+        "title": "Stockholm Agreement achieves Hodeidah ceasefire",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2022-04-02",
+        "title": "UN-brokered nationwide truce begins",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2023-03-10",
+        "title": "Saudi-Iran rapprochement brokered by China opens diplomatic space",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2023-11-19",
+        "title": "Houthis begin Red Sea attacks on commercial shipping",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-12",
+        "title": "US and UK launch strikes against Houthi targets in Yemen",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2014": 5000,
+        "2015": 30000,
+        "2016": 35000,
+        "2017": 40000,
+        "2018": 50000,
+        "2019": 45000,
+        "2020": 40000,
+        "2021": 35000,
+        "2022": 30000,
+        "2023": 25000,
+        "2024": 22000,
+        "2025": 20000
+      },
+      "displacedByYear": {
+        "2014": 500000,
+        "2015": 2500000,
+        "2016": 3000000,
+        "2017": 3200000,
+        "2018": 3600000,
+        "2019": 3800000,
+        "2020": 4000000,
+        "2021": 4200000,
+        "2022": 4500000,
+        "2023": 4500000,
+        "2024": 4500000,
+        "2025": 4500000
+      }
+    }
+  },
+  {
+    "id": "drc",
+    "name": "DR Congo: Eastern Conflict",
+    "region": "Central Africa",
+    "type": "civil-war",
+    "severity": "high",
+    "started": "1996 (current phase since 2021)",
+    "displaced": "~7 million internally",
+    "casualties": "Millions over decades (deadliest conflict since WWII)",
+    "summary": "The resource-rich eastern Congo remains devastated by over 100 armed groups fighting for control of minerals, land, and power — with significant involvement from neighboring Rwanda and Uganda.",
+    "causes": [
+      "Resources",
+      "Ethnic tensions",
+      "Colonial legacy",
+      "Geopolitics"
+    ],
+    "who": {
+      "sideA": "Congolese armed forces (FARDC), various Mai-Mai militias",
+      "sideB": "M23 rebels (backed by Rwanda), Allied Democratic Forces (ADF), 100+ other armed groups"
+    },
+    "why": "Eastern DRC holds enormous mineral wealth (coltan, cobalt, gold, cassiterite) that fuels armed groups and attracts foreign interference. The roots trace to the 1994 Rwandan genocide, when Hutu perpetrators fled into Congo, triggering two continental wars. Weak state presence, ethnic land disputes, and exploitation by neighboring powers perpetuate the cycle.",
+    "resources": "Coltan (essential for electronics), cobalt (critical for batteries/EVs), gold, diamonds, timber, and cassiterite. Eastern DRC supplies minerals critical to global technology supply chains.",
+    "whatAbout": "Control of mineral wealth; Rwanda's security concerns and economic interests; ethnic Tutsi/Hutu dynamics spilling across borders; state weakness and corruption; the global supply chain's role in fueling conflict; UN peacekeeping failures.",
+    "pathToResolution": "Enforcement of mineral traceability and due diligence, regional diplomatic engagement (Luanda and Nairobi processes), security sector reform, extension of state authority to the east, accountability for Rwanda's role, and community-level reconciliation. Conflict mineral legislation (like the EU's) shows how consumer countries can help.",
+    "impact": "The deadliest conflict since WWII in cumulative toll, massive sexual violence used as a weapon of war, child soldier recruitment, displacement, and global ethical questions about mineral supply chains.",
+    "lat": -1.5,
+    "lng": 29,
+    "bounds": [
+      [
+        -5,
+        25
+      ],
+      [
+        4,
+        31
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1996-10-24",
+        "title": "First Congo War begins as Rwandan-backed forces invade",
+        "type": "escalation"
+      },
+      {
+        "date": "1998-08-02",
+        "title": "Second Congo War begins, eventually involving nine African nations",
+        "type": "escalation"
+      },
+      {
+        "date": "2003-07-17",
+        "title": "Sun City Agreement establishes transitional government",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2012-11-20",
+        "title": "M23 rebels capture Goma, eastern DRC's largest city",
+        "type": "escalation"
+      },
+      {
+        "date": "2013-11-05",
+        "title": "M23 defeated by Congolese army and UN forces",
+        "type": "resolution"
+      },
+      {
+        "date": "2022-06-13",
+        "title": "M23 resurges and captures territory in North Kivu",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-02-07",
+        "title": "M23 advances toward Goma amid regional diplomatic efforts",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-08-04",
+        "title": "Luanda ceasefire agreement between DRC and Rwanda",
+        "type": "ceasefire"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "1996": 200000,
+        "1998": 300000,
+        "1999": 400000,
+        "2000": 350000,
+        "2001": 250000,
+        "2002": 200000,
+        "2003": 150000,
+        "2010": 30000,
+        "2015": 20000,
+        "2020": 15000,
+        "2022": 20000,
+        "2023": 25000,
+        "2024": 20000,
+        "2025": 15000
+      },
+      "displacedByYear": {
+        "2010": 2000000,
+        "2015": 3000000,
+        "2020": 5000000,
+        "2022": 5500000,
+        "2023": 6500000,
+        "2024": 7000000,
+        "2025": 7200000
+      }
+    }
+  },
+  {
+    "id": "sahel",
+    "name": "Sahel Crisis (Mali, Burkina Faso, Niger)",
+    "region": "West Africa",
+    "type": "insurgency",
+    "severity": "high",
+    "started": "2012 (Mali); expanded regionally",
+    "displaced": "~3.8 million",
+    "casualties": "Tens of thousands",
+    "summary": "Jihadist insurgencies, military coups, and intercommunal violence have destabilized the entire Sahel region, with governments turning to Russia's Wagner Group after expelling French forces.",
+    "causes": [
+      "Governance failure",
+      "Extremism",
+      "Colonial legacy",
+      "Climate"
+    ],
+    "who": {
+      "sideA": "Military juntas (Mali, Burkina Faso, Niger — Alliance of Sahel States), Wagner Group/Africa Corps",
+      "sideB": "Jihadist groups (JNIM linked to al-Qaeda, Islamic State Sahel Province), also some Tuareg separatists"
+    },
+    "why": "State weakness, corruption, and neglect of peripheral regions created a governance vacuum. The 2011 collapse of Libya flooded the region with weapons. Jihadist groups exploited local grievances — ethnic marginalization, land disputes, lack of services — to recruit fighters. French military intervention (2013-2022) failed to address root causes. Military coups promised security but haven't delivered.",
+    "resources": "Gold (Mali and Burkina Faso are significant producers), uranium (Niger supplies ~5% of global production), pastoral land increasingly scarce due to climate change, and narcotics trafficking routes.",
+    "whatAbout": "State failure and military governance; jihadist expansion; climate-driven farmer-herder conflicts; French neo-colonial legacy; Russia's expanding influence in Africa; the future of ECOWAS; civilian protection; youth radicalization driven by poverty and exclusion.",
+    "pathToResolution": "Governance reform that delivers services and justice to rural populations, addressing climate-driven resource competition, community-based conflict resolution between farmers and herders, deradicalization programs, and regional cooperation. Local peace agreements in Mali show promise.",
+    "impact": "Spreading instability threatening West African coast countries, democratic backsliding, humanitarian crisis, and a test case for competing Russian and Western influence in Africa.",
+    "lat": 14,
+    "lng": -2,
+    "bounds": [
+      [
+        10,
+        -12
+      ],
+      [
+        20,
+        16
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2012-01-17",
+        "title": "Tuareg rebellion begins in northern Mali",
+        "type": "escalation"
+      },
+      {
+        "date": "2013-01-11",
+        "title": "France launches Operation Serval to halt jihadist advance on Bamako",
+        "type": "escalation"
+      },
+      {
+        "date": "2015-06-20",
+        "title": "Algiers Peace Accord signed between Malian government and Tuareg groups",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2020-08-18",
+        "title": "Military coup ousts President Keita in Mali",
+        "type": "escalation"
+      },
+      {
+        "date": "2022-02-17",
+        "title": "France announces withdrawal of Operation Barkhane from Mali",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2023-07-26",
+        "title": "Military coup in Niger; Mali, Burkina Faso, Niger form Alliance of Sahel States",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-09-16",
+        "title": "Wagner Group expands operations across the Sahel",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-28",
+        "title": "Mali, Niger, and Burkina Faso announce withdrawal from ECOWAS",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2012": 3000,
+        "2013": 2500,
+        "2014": 2000,
+        "2015": 2500,
+        "2016": 3000,
+        "2017": 4000,
+        "2018": 5000,
+        "2019": 6000,
+        "2020": 6500,
+        "2021": 5500,
+        "2022": 6000,
+        "2023": 8000,
+        "2024": 7000,
+        "2025": 6000
+      },
+      "displacedByYear": {
+        "2012": 500000,
+        "2015": 1000000,
+        "2018": 1500000,
+        "2020": 2500000,
+        "2022": 3000000,
+        "2023": 3500000,
+        "2024": 3800000,
+        "2025": 4000000
+      }
+    }
+  },
+  {
+    "id": "syria",
+    "name": "Syria: Post-Assad Transition",
+    "region": "Middle East",
+    "type": "civil-war",
+    "severity": "medium",
+    "started": "2011 (new phase since Assad's fall in late 2024)",
+    "displaced": "~12 million (half the pre-war population)",
+    "casualties": "500,000+ killed since 2011",
+    "summary": "After 13 years of devastating civil war, the Assad regime fell in late 2024. Syria now faces the immense challenge of transition, reconstruction, and reconciliation amid ongoing fragmentation.",
+    "causes": [
+      "Authoritarian rule",
+      "Sectarian",
+      "Geopolitics",
+      "Resources"
+    ],
+    "who": {
+      "sideA": "New transitional authorities (HTS-led)",
+      "sideB": "Various: remaining regime loyalists, ISIS remnants, Kurdish autonomous forces (SDF), Turkish-backed factions"
+    },
+    "why": "The 2011 Arab Spring uprising against the Assad dynasty was met with extreme military repression, spiraling into civil war. International involvement from Russia, Iran, Turkey, the US, and Gulf states turned Syria into a proxy battlefield. The war produced one of the century's worst refugee crises. Assad's fall opens possibilities but also risks further fragmentation.",
+    "resources": "Oil and gas reserves (modest but contested), agricultural land, water resources (Euphrates), and strategic location connecting the Mediterranean to the Middle East.",
+    "whatAbout": "Building a new inclusive government; Kurdish autonomy; ISIS remnants; refugee return; reconstruction (estimated $400B+); Turkish security concerns; Iran and Russia's diminished influence; transitional justice for war crimes; de-mining; rebuilding shattered institutions.",
+    "pathToResolution": "Inclusive political transition under UN framework (Resolution 2254), constitutional reform, security sector integration, refugee return facilitation, massive reconstruction effort, and transitional justice. Post-WWII Germany and post-Dayton Bosnia offer models for reconstruction and reconciliation.",
+    "impact": "Largest refugee crisis of the 21st century, shaped the global migration debate, demonstrated limits of humanitarian intervention, and reshaped Middle Eastern geopolitics.",
+    "lat": 35,
+    "lng": 38.5,
+    "bounds": [
+      [
+        32,
+        35
+      ],
+      [
+        37,
+        42
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2011-03-15",
+        "title": "Protests erupt in Daraa; Assad regime responds with force",
+        "type": "escalation"
+      },
+      {
+        "date": "2013-08-21",
+        "title": "Chemical weapons attack in Ghouta kills hundreds of civilians",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2015-09-30",
+        "title": "Russia intervenes militarily in support of Assad regime",
+        "type": "escalation"
+      },
+      {
+        "date": "2017-10-17",
+        "title": "Raqqa liberated from ISIS by US-backed SDF forces",
+        "type": "resolution"
+      },
+      {
+        "date": "2019-10-09",
+        "title": "Turkey launches military operation in northeastern Syria",
+        "type": "escalation"
+      },
+      {
+        "date": "2020-03-05",
+        "title": "Russia-Turkey ceasefire agreement in Idlib",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2024-12-08",
+        "title": "HTS-led opposition forces capture Damascus; Assad flees to Russia",
+        "type": "resolution"
+      },
+      {
+        "date": "2025-01-15",
+        "title": "Transitional government begins forming amid international engagement",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2011": 5000,
+        "2012": 40000,
+        "2013": 73000,
+        "2014": 76000,
+        "2015": 55000,
+        "2016": 50000,
+        "2017": 39000,
+        "2018": 30000,
+        "2019": 15000,
+        "2020": 10000,
+        "2021": 5000,
+        "2022": 4000,
+        "2023": 3000,
+        "2024": 8000,
+        "2025": 2000
+      },
+      "displacedByYear": {
+        "2011": 500000,
+        "2012": 3000000,
+        "2013": 6000000,
+        "2014": 10000000,
+        "2015": 12000000,
+        "2016": 12000000,
+        "2017": 12000000,
+        "2018": 12000000,
+        "2019": 12000000,
+        "2020": 12000000,
+        "2021": 12000000,
+        "2022": 12000000,
+        "2023": 12000000,
+        "2024": 12000000,
+        "2025": 10000000
+      }
+    }
+  },
+  {
+    "id": "haiti",
+    "name": "Haiti: Gang Violence & State Collapse",
+    "region": "Caribbean / Americas",
+    "type": "civil-war",
+    "severity": "high",
+    "started": "2021 (escalated), decades of instability",
+    "displaced": "~700,000 internally",
+    "casualties": "Thousands killed annually",
+    "summary": "Haiti faces near-complete state collapse as armed gangs control most of the capital Port-au-Prince and expand nationwide, creating a catastrophic humanitarian emergency.",
+    "causes": [
+      "Governance failure",
+      "Poverty",
+      "Colonial legacy",
+      "Foreign interference"
+    ],
+    "who": {
+      "sideA": "Haitian National Police (severely under-resourced), Kenyan-led Multinational Security Support mission",
+      "sideB": "Armed gang coalitions (G9, G-Pèp), with ties to political and economic elites"
+    },
+    "why": "Haiti's crisis stems from centuries of exploitation — from slavery and French colonial extraction (Haiti was forced to pay \"independence debt\" until 1947), to repeated US interventions, to decades of corrupt governance and international neglect. The 2021 assassination of President Moïse created a complete power vacuum. Gangs, originally armed by political elites, now control most territory.",
+    "resources": "Limited natural resources (largely deforested), but control of ports, customs revenue, and drug trafficking routes. Haiti's poverty itself is a resource issue — the result of systematic extraction dating to colonial times.",
+    "whatAbout": "State rebuilding from near-zero; gang disarmament and reintegration; restoring basic services (healthcare, education, water); addressing extreme poverty and inequality; the legacy of colonialism and foreign debt; democratic governance; security force reform.",
+    "pathToResolution": "Security stabilization (MSS mission), gang disruption combined with community reintegration programs, transitional governance leading to elections, massive investment in basic services, and addressing the root economic causes. Colombia's demobilization process and Sierra Leone's recovery offer relevant models.",
+    "impact": "Complete humanitarian catastrophe in the Western hemisphere, mass migration, challenge to regional stability, and a stark example of how colonial legacies compound over centuries.",
+    "lat": 18.9,
+    "lng": -72.3,
+    "bounds": [
+      [
+        18,
+        -74
+      ],
+      [
+        20,
+        -71
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2010-01-12",
+        "title": "Magnitude 7.0 earthquake devastates Haiti, killing 220,000+",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2021-07-07",
+        "title": "President Jovenel Moïse assassinated at his residence",
+        "type": "escalation"
+      },
+      {
+        "date": "2022-10-01",
+        "title": "Gangs blockade main fuel terminal, paralyzing the country",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-06-01",
+        "title": "UN authorizes Kenya-led Multinational Security Support mission",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2024-02-29",
+        "title": "Coordinated gang attacks on government buildings force PM Henry to resign",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-06-25",
+        "title": "Kenyan police deploy to Port-au-Prince as MSS mission begins",
+        "type": "resolution"
+      },
+      {
+        "date": "2024-08-15",
+        "title": "Transitional Presidential Council established",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2025-01-10",
+        "title": "Gangs expand control to 80% of Port-au-Prince despite MSS presence",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2021": 1500,
+        "2022": 2500,
+        "2023": 4500,
+        "2024": 5500,
+        "2025": 4000
+      },
+      "displacedByYear": {
+        "2021": 200000,
+        "2022": 350000,
+        "2023": 500000,
+        "2024": 700000,
+        "2025": 750000
+      }
+    }
+  },
+  {
+    "id": "south-china-sea",
+    "name": "South China Sea Tensions",
+    "region": "Indo-Pacific",
+    "type": "tension",
+    "severity": "tension",
+    "started": "Escalating since 2010s",
+    "displaced": "N/A (military standoffs, not active combat)",
+    "casualties": "Limited (confrontations, water cannon incidents)",
+    "summary": "China's expansive territorial claims over nearly the entire South China Sea put it in direct conflict with the Philippines, Vietnam, Taiwan, Malaysia, and Brunei — with the US backing its allies.",
+    "causes": [
+      "Territory",
+      "Resources",
+      "Geopolitics",
+      "Trade routes"
+    ],
+    "who": {
+      "sideA": "China (asserting \"nine-dash line\" claims)",
+      "sideB": "Philippines, Vietnam, Taiwan, Malaysia, Brunei — backed by the United States, Japan, Australia"
+    },
+    "why": "China claims historical sovereignty over most of the South China Sea, building artificial islands with military installations. This clashes with international law (the 2016 Hague tribunal ruled against China's claims) and the sovereignty of neighboring states. The US sees free navigation as essential to the rules-based order and its Indo-Pacific alliances.",
+    "resources": "Massive fisheries (12% of global catch), estimated 11 billion barrels of oil and 190 trillion cubic feet of natural gas, and $5.3 trillion in annual shipping trade passes through these waters.",
+    "whatAbout": "Freedom of navigation and international law; resource rights in exclusive economic zones; China's rise and territorial ambitions; US-China strategic competition; ASEAN unity; risk of miscalculation leading to conflict between nuclear powers.",
+    "pathToResolution": "Enforcement of UNCLOS and the 2016 arbitral ruling, a binding Code of Conduct between ASEAN and China, joint resource development agreements, military-to-military communication channels to prevent escalation, and diplomatic frameworks for peaceful dispute resolution.",
+    "impact": "Risk of great power conflict, threats to global trade ($5.3T annually), militarization of international waters, stress-testing of international law.",
+    "lat": 12,
+    "lng": 114,
+    "bounds": [
+      [
+        3,
+        105
+      ],
+      [
+        22,
+        122
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "2012-04-10",
+        "title": "Scarborough Shoal standoff between China and the Philippines",
+        "type": "escalation"
+      },
+      {
+        "date": "2014-05-02",
+        "title": "China places oil rig in waters claimed by Vietnam, sparking confrontation",
+        "type": "escalation"
+      },
+      {
+        "date": "2016-07-12",
+        "title": "Hague tribunal rules against China's nine-dash line claims",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2018-04-12",
+        "title": "China deploys military assets to artificial islands in the Spratlys",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-02-06",
+        "title": "Philippines accuses China of directing military-grade laser at coast guard",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-10-22",
+        "title": "Chinese and Philippine vessels collide near Second Thomas Shoal",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-06-17",
+        "title": "Philippine sailor injured in confrontation with Chinese coast guard",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {},
+      "displacedByYear": {}
+    }
+  },
+  {
+    "id": "taiwan",
+    "name": "Taiwan Strait Tensions",
+    "region": "East Asia / Indo-Pacific",
+    "type": "tension",
+    "severity": "tension",
+    "started": "Since 1949 (escalating since 2020s)",
+    "displaced": "N/A (no active combat)",
+    "casualties": "N/A",
+    "summary": "The risk of conflict over Taiwan represents the single most dangerous flashpoint for a potential great power war between the US and China, with massive global implications.",
+    "causes": [
+      "Sovereignty",
+      "Geopolitics",
+      "Identity",
+      "Economics"
+    ],
+    "who": {
+      "sideA": "People's Republic of China (claims Taiwan as part of its territory)",
+      "sideB": "Taiwan (de facto independent democracy since 1949), backed by the United States under the Taiwan Relations Act"
+    },
+    "why": "When the Chinese Communist Party won the civil war in 1949, the defeated Nationalist government fled to Taiwan. China has never renounced the use of force to achieve \"reunification.\" Taiwan has evolved into a vibrant democracy with its own identity and has no desire for unification. The US maintains strategic ambiguity — recognizing Beijing diplomatically while providing Taiwan with defensive arms.",
+    "resources": "Taiwan produces over 90% of the world's most advanced semiconductors (TSMC). A conflict would devastate global technology supply chains. Taiwan Strait is also a critical shipping lane.",
+    "whatAbout": "Self-determination vs. territorial claims; the semiconductor global supply chain; US-China great power rivalry; the future of democracy in Asia; nuclear deterrence; the rules-based international order.",
+    "pathToResolution": "Maintaining the status quo through deterrence, economic interdependence, and diplomatic channels. Cross-strait dialogue, confidence-building measures, and multilateral frameworks for managing tensions. The Cold War model of \"peaceful coexistence\" while maintaining distinct systems offers one precedent.",
+    "impact": "A conflict would be catastrophic: global semiconductor shortage (crippling tech, automotive, medical industries), potential nuclear escalation, disruption of $2.45T in annual trade through the strait, and a global economic depression.",
+    "lat": 23.5,
+    "lng": 121,
+    "bounds": [
+      [
+        21,
+        118
+      ],
+      [
+        26,
+        123
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1949-12-07",
+        "title": "Nationalist government retreats to Taiwan after civil war",
+        "type": "escalation"
+      },
+      {
+        "date": "1979-01-01",
+        "title": "US switches diplomatic recognition from Taipei to Beijing",
+        "type": "diplomacy"
+      },
+      {
+        "date": "1995-07-21",
+        "title": "Third Taiwan Strait Crisis: China conducts missile tests near Taiwan",
+        "type": "escalation"
+      },
+      {
+        "date": "2016-01-16",
+        "title": "DPP's Tsai Ing-wen elected president; cross-strait relations cool",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2022-08-02",
+        "title": "Pelosi visits Taiwan; China launches largest-ever military exercises around island",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-13",
+        "title": "DPP's Lai Ching-te wins presidential election despite Chinese pressure",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2024-05-23",
+        "title": "China conducts \"Joint Sword-2024A\" military drills surrounding Taiwan",
+        "type": "escalation"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {},
+      "displacedByYear": {}
+    }
+  },
+  {
+    "id": "north-korea",
+    "name": "Korean Peninsula Nuclear Tensions",
+    "region": "East Asia",
+    "type": "tension",
+    "severity": "tension",
+    "started": "1953 armistice (never formally ended); nuclear since 2006",
+    "displaced": "N/A",
+    "casualties": "N/A (armistice holds)",
+    "summary": "North Korea's growing nuclear arsenal and missile capabilities represent a persistent threat to regional and global security, with the Korean War technically still unresolved after 70+ years.",
+    "causes": [
+      "Nuclear weapons",
+      "Geopolitics",
+      "Ideology",
+      "Security"
+    ],
+    "who": {
+      "sideA": "North Korea (DPRK) under Kim Jong Un, supported by China and increasingly Russia",
+      "sideB": "South Korea (ROK) and the United States, with Japan as a key regional partner"
+    },
+    "why": "The Korean Peninsula was divided in 1945 and fought a devastating war (1950-53) that never formally ended. North Korea pursued nuclear weapons as a regime survival strategy, believing they are the ultimate guarantee against invasion. Diplomatic efforts (Six-Party Talks, 2018 summits) have failed to achieve denuclearization. North Korea's growing cooperation with Russia (providing weapons for Ukraine) has added new complexity.",
+    "resources": "North Korea has significant untapped mineral resources (rare earths, coal, iron ore). The Korean Peninsula's strategic location between China, Japan, and Russia makes it a geopolitical pivot point.",
+    "whatAbout": "Nuclear proliferation and disarmament; regime survival vs. international security; human rights in North Korea; Korean reunification; US military presence in Asia; the nuclear deterrence doctrine; sanctions effectiveness.",
+    "pathToResolution": "Arms control agreements (building on past frameworks like the Agreed Framework), security guarantees in exchange for denuclearization steps, humanitarian engagement, economic incentives, and eventually a peace treaty to formally end the Korean War. The Iran nuclear deal (JCPOA) showed both the potential and fragility of nuclear agreements.",
+    "impact": "Ongoing risk of nuclear conflict, humanitarian crisis inside North Korea, proliferation risk (technology and materials), and impediment to Northeast Asian economic integration.",
+    "lat": 39,
+    "lng": 127,
+    "bounds": [
+      [
+        33,
+        124
+      ],
+      [
+        43,
+        131
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1953-07-27",
+        "title": "Korean War armistice signed at Panmunjom",
+        "type": "ceasefire"
+      },
+      {
+        "date": "1994-10-21",
+        "title": "Agreed Framework signed: North Korea to freeze nuclear program",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2006-10-09",
+        "title": "North Korea conducts first nuclear weapon test",
+        "type": "escalation"
+      },
+      {
+        "date": "2017-11-29",
+        "title": "North Korea tests Hwasong-15 ICBM capable of reaching US mainland",
+        "type": "escalation"
+      },
+      {
+        "date": "2018-06-12",
+        "title": "Trump-Kim summit in Singapore; joint statement on denuclearization",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2022-03-24",
+        "title": "North Korea tests Hwasong-17 ICBM, largest missile to date",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-11-21",
+        "title": "North Korea launches military spy satellite",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-06-19",
+        "title": "Putin visits Pyongyang; Russia-DPRK sign mutual defense pact",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {},
+      "displacedByYear": {}
+    }
+  },
+  {
+    "id": "somalia",
+    "name": "Somalia: Al-Shabaab Insurgency",
+    "region": "East Africa / Horn of Africa",
+    "type": "insurgency",
+    "severity": "medium",
+    "started": "2006 (Al-Shabaab); state collapse since 1991",
+    "displaced": "~3.8 million",
+    "casualties": "Thousands annually",
+    "summary": "Al-Shabaab, Africa's deadliest militant group, continues to wage an insurgency against the Somali federal government despite decades of international intervention.",
+    "causes": [
+      "Governance failure",
+      "Extremism",
+      "Clan rivalry",
+      "Colonial legacy"
+    ],
+    "who": {
+      "sideA": "Somali federal government, African Union Transition Mission (ATMIS)",
+      "sideB": "Al-Shabaab (al-Qaeda affiliate), ISIS-Somalia (smaller faction)"
+    },
+    "why": "Somalia's central government collapsed in 1991, and over three decades of civil war, clan competition, and foreign intervention followed. Al-Shabaab emerged from the Islamic Courts Union and exploits governance gaps, providing crude but functional justice and services where the state cannot. The group controls significant territory in south-central Somalia.",
+    "resources": "Livestock (Somalia's main export), charcoal trade (a major Al-Shabaab revenue source), fisheries, and modest oil/gas potential. Strategic location on the Horn of Africa and Gulf of Aden shipping lanes.",
+    "whatAbout": "State-building in a fragmented society; clan-based politics; the limits of military counterterrorism; youth radicalization driven by unemployment; climate-driven displacement and food insecurity; regional dynamics (Ethiopia, Kenya, Djibouti); the African Union mission's future.",
+    "pathToResolution": "Community-level governance strengthening, defector reintegration programs, inclusive political settlement addressing clan grievances, economic development especially for youth, and addressing climate-driven food insecurity. Local clan-based peace agreements (like the Somaliland model) have shown success.",
+    "impact": "Chronic humanitarian crisis, piracy (disrupting global shipping), terrorism risk extending to Kenya and the region, and a test case for state-building after total collapse.",
+    "lat": 5,
+    "lng": 46,
+    "bounds": [
+      [
+        -2,
+        40
+      ],
+      [
+        12,
+        52
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1991-01-26",
+        "title": "President Barre ousted; Somalia descends into civil war and state collapse",
+        "type": "escalation"
+      },
+      {
+        "date": "2006-06-05",
+        "title": "Islamic Courts Union takes control of Mogadishu",
+        "type": "escalation"
+      },
+      {
+        "date": "2007-03-06",
+        "title": "African Union peacekeeping mission (AMISOM) deploys to Somalia",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2011-08-06",
+        "title": "Al-Shabaab withdraws from Mogadishu under military pressure",
+        "type": "resolution"
+      },
+      {
+        "date": "2017-10-14",
+        "title": "Deadliest truck bombing in Mogadishu kills 587 people",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2022-08-20",
+        "title": "President Mohamud launches major anti-Al-Shabaab offensive",
+        "type": "escalation"
+      },
+      {
+        "date": "2024-01-01",
+        "title": "AMISOM transitions to smaller ATMIS force",
+        "type": "diplomacy"
+      },
+      {
+        "date": "2024-07-15",
+        "title": "Government forces recapture key towns in central Somalia",
+        "type": "resolution"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "2006": 3000,
+        "2007": 5000,
+        "2008": 6000,
+        "2009": 5000,
+        "2010": 4000,
+        "2011": 4000,
+        "2012": 3500,
+        "2013": 3000,
+        "2014": 4000,
+        "2015": 4500,
+        "2016": 3500,
+        "2017": 5000,
+        "2018": 4000,
+        "2019": 3500,
+        "2020": 3000,
+        "2021": 3500,
+        "2022": 5000,
+        "2023": 4000,
+        "2024": 3500,
+        "2025": 3000
+      },
+      "displacedByYear": {
+        "2010": 1500000,
+        "2015": 2000000,
+        "2018": 2500000,
+        "2020": 2800000,
+        "2022": 3500000,
+        "2023": 3800000,
+        "2024": 3800000,
+        "2025": 3800000
+      }
+    }
+  },
+  {
+    "id": "nagorno-karabakh",
+    "name": "Armenia–Azerbaijan: Post-Karabakh Tensions",
+    "region": "South Caucasus",
+    "type": "tension",
+    "severity": "medium",
+    "started": "1988-94 war; 2020 war; 2023 Azerbaijan retook Karabakh",
+    "displaced": "~120,000 ethnic Armenians (entire population of Karabakh)",
+    "casualties": "~7,000 killed in 2020 war",
+    "summary": "Azerbaijan's 2023 military operation in Nagorno-Karabakh resulted in the flight of the entire ethnic Armenian population. Tensions now center on demarcating the Armenia-Azerbaijan border and a potential peace treaty.",
+    "causes": [
+      "Territory",
+      "Ethnic identity",
+      "Soviet legacy",
+      "Geopolitics"
+    ],
+    "who": {
+      "sideA": "Azerbaijan (backed by Turkey)",
+      "sideB": "Armenia (historically backed by Russia, now seeking Western ties)"
+    },
+    "why": "Nagorno-Karabakh was an Armenian-populated enclave within Azerbaijan's borders, a legacy of Soviet-era administrative boundaries. Ethnic conflict erupted as the USSR collapsed. Armenia controlled the region for three decades until Azerbaijan, modernized with oil wealth and Turkish military support, recaptured it in 2020 and fully in 2023.",
+    "resources": "Azerbaijan's oil and gas wealth funded its military modernization. Strategic pipeline and transport corridor routes through the South Caucasus are contested.",
+    "whatAbout": "Ethnic cleansing and displacement; border demarcation; prisoner of war release; cultural heritage preservation; Russia's declining influence in its \"near abroad\"; Turkey's rising regional role; the Zangezur corridor dispute.",
+    "pathToResolution": "A comprehensive peace treaty normalizing relations, clear border demarcation, resolution of remaining prisoners and displaced persons issues, and a framework for regional economic cooperation. The Dayton Accords (Bosnia) and Erdogan-Assad rapprochement offer models for post-conflict normalization.",
+    "impact": "Complete ethnic displacement of Karabakh Armenians, shifting regional power dynamics, demonstration of drone warfare effectiveness, and Russia's weakened role as regional guarantor.",
+    "lat": 39.8,
+    "lng": 46.8,
+    "bounds": [
+      [
+        38,
+        43
+      ],
+      [
+        42,
+        50
+      ]
+    ],
+    "keyEvents": [
+      {
+        "date": "1988-02-20",
+        "title": "Nagorno-Karabakh votes to join Armenia, sparking ethnic conflict",
+        "type": "escalation"
+      },
+      {
+        "date": "1994-05-12",
+        "title": "Bishkek Protocol ceasefire ends first Nagorno-Karabakh war",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2020-09-27",
+        "title": "Azerbaijan launches military offensive to recapture Nagorno-Karabakh",
+        "type": "escalation"
+      },
+      {
+        "date": "2020-11-10",
+        "title": "Russia-brokered ceasefire; Azerbaijan regains significant territory",
+        "type": "ceasefire"
+      },
+      {
+        "date": "2022-12-12",
+        "title": "Azerbaijan blockades Lachin corridor, isolating Karabakh Armenians",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-09-19",
+        "title": "Azerbaijan launches 24-hour military operation; Karabakh forces surrender",
+        "type": "escalation"
+      },
+      {
+        "date": "2023-09-28",
+        "title": "120,000 ethnic Armenians flee Karabakh in mass exodus",
+        "type": "humanitarian"
+      },
+      {
+        "date": "2024-04-19",
+        "title": "Armenia and Azerbaijan agree on border delimitation principles",
+        "type": "diplomacy"
+      }
+    ],
+    "stats": {
+      "casualtiesByYear": {
+        "1992": 6000,
+        "1993": 8000,
+        "1994": 3000,
+        "2016": 350,
+        "2020": 7000,
+        "2023": 300
+      },
+      "displacedByYear": {
+        "1992": 600000,
+        "1993": 800000,
+        "1994": 1000000,
+        "2020": 90000,
+        "2023": 120000
+      }
+    }
+  }
+]

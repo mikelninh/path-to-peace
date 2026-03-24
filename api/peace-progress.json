@@ -1,0 +1,645 @@
+[
+  {
+    "conflictId": "russia-ukraine",
+    "status": "stalled",
+    "statusLabel": "Peace Talks Stalled",
+    "lastUpdate": "March 2025",
+    "summary": "Multiple diplomatic initiatives have failed to produce a ceasefire. Early 2022 negotiations in Istanbul showed promise but collapsed. Since then, both sides have hardened their positions. International summits have gathered support for principles but failed to bring Russia to the table.",
+    "milestones": [
+      {
+        "date": "Jun 2024",
+        "event": "Switzerland hosts global peace summit in Burgenstock; over 90 countries attend but Russia absent",
+        "status": "progress"
+      },
+      {
+        "date": "Mar 2024",
+        "event": "China-Brazil six-point peace proposal circulated among Global South nations",
+        "status": "stalled"
+      },
+      {
+        "date": "Aug 2023",
+        "event": "Saudi Arabia hosts talks in Jeddah with over 40 countries; no breakthrough",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2022",
+        "event": "G20 statement says most members condemn the war; diplomatic pressure builds",
+        "status": "progress"
+      },
+      {
+        "date": "Mar 2022",
+        "event": "Istanbul negotiations produce draft framework but talks collapse after Bucha revelations",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "A framework acceptable to both sides addressing territorial status, security guarantees, NATO membership, sanctions relief, and accountability. Russia must be willing to negotiate in good faith, and Ukraine's sovereignty and right to choose its alliances must be respected.",
+    "keyActors": [
+      "United Nations",
+      "China",
+      "Turkey",
+      "Switzerland",
+      "Saudi Arabia",
+      "Brazil"
+    ]
+  },
+  {
+    "conflictId": "israel-palestine",
+    "status": "no-process",
+    "statusLabel": "No Peace Process",
+    "lastUpdate": "March 2025",
+    "summary": "The October 7 attack and subsequent Israeli military campaign in Gaza destroyed any remaining framework for peace talks. Hostage negotiations have been the only active diplomatic track. The two-state solution framework remains the international consensus but has no active negotiating process.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "Ceasefire agreement reached for phased hostage releases and temporary halt in fighting",
+        "status": "progress"
+      },
+      {
+        "date": "Jul 2024",
+        "event": "ICJ advisory opinion declares Israeli occupation of Palestinian territories unlawful",
+        "status": "progress"
+      },
+      {
+        "date": "May 2024",
+        "event": "ICC prosecutor seeks arrest warrants for Israeli and Hamas leaders",
+        "status": "progress"
+      },
+      {
+        "date": "Mar 2024",
+        "event": "UN Security Council passes first ceasefire resolution; not implemented",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2023",
+        "event": "Brief humanitarian pause for hostage exchange; fighting resumes after one week",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "Sustained ceasefire, release of all hostages, massive humanitarian relief for Gaza, and revival of a political horizon for Palestinian statehood. Regional normalization efforts must be linked to meaningful progress on Palestinian rights.",
+    "keyActors": [
+      "United States",
+      "Egypt",
+      "Qatar",
+      "United Nations",
+      "Arab League",
+      "European Union"
+    ]
+  },
+  {
+    "conflictId": "sudan",
+    "status": "stalled",
+    "statusLabel": "Mediation Stalled",
+    "lastUpdate": "February 2025",
+    "summary": "The Jeddah peace process mediated by Saudi Arabia and the United States has failed to produce a lasting ceasefire. Both the SAF and RSF have violated short-term truces. African Union efforts have also stalled due to disagreements over the mediation format.",
+    "milestones": [
+      {
+        "date": "Aug 2024",
+        "event": "Renewed Jeddah talks; RSF representatives attend but SAF boycotts",
+        "status": "stalled"
+      },
+      {
+        "date": "Jun 2024",
+        "event": "UN Human Rights Council establishes fact-finding mission on Sudan",
+        "status": "progress"
+      },
+      {
+        "date": "Jan 2024",
+        "event": "IGAD summit calls for ceasefire; neither party complies",
+        "status": "stalled"
+      },
+      {
+        "date": "May 2023",
+        "event": "Jeddah Declaration of Commitment signed by both parties; immediately violated",
+        "status": "stalled"
+      },
+      {
+        "date": "Apr 2023",
+        "event": "Fighting erupts between SAF and RSF in Khartoum",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "A unified international mediation framework bringing together the Jeddah, AU, and IGAD processes. Both parties must face real consequences for violating ceasefires. Civilian protection must be prioritized alongside any political settlement.",
+    "keyActors": [
+      "Saudi Arabia",
+      "United States",
+      "African Union",
+      "IGAD",
+      "Egypt",
+      "UAE"
+    ]
+  },
+  {
+    "conflictId": "myanmar",
+    "status": "no-process",
+    "statusLabel": "No Peace Process",
+    "lastUpdate": "March 2025",
+    "summary": "There is no credible peace process. ASEAN's Five-Point Consensus from 2021 has been largely ignored by the military junta. Resistance forces have made significant territorial gains, but the junta shows no willingness to negotiate. The conflict is trending toward a protracted civil war with potential for further fragmentation.",
+    "milestones": [
+      {
+        "date": "Nov 2024",
+        "event": "Resistance forces capture multiple towns in Shan and Rakhine states",
+        "status": "progress"
+      },
+      {
+        "date": "Oct 2023",
+        "event": "Operation 1027 launches coordinated resistance offensive, capturing territory along Chinese border",
+        "status": "progress"
+      },
+      {
+        "date": "Jan 2023",
+        "event": "Junta extends state of emergency, delays promised elections indefinitely",
+        "status": "stalled"
+      },
+      {
+        "date": "Apr 2021",
+        "event": "ASEAN Five-Point Consensus adopted; junta does not implement it",
+        "status": "stalled"
+      },
+      {
+        "date": "Feb 2021",
+        "event": "Military coup overthrows elected government; civil disobedience movement begins",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "The junta must be pressured to accept that a military solution is not possible. ASEAN needs to move beyond the failed Five-Point Consensus. International engagement with the National Unity Government and ethnic organizations as legitimate actors is essential.",
+    "keyActors": [
+      "ASEAN",
+      "China",
+      "India",
+      "Japan",
+      "United States",
+      "European Union"
+    ]
+  },
+  {
+    "conflictId": "ethiopia",
+    "status": "active-talks",
+    "statusLabel": "Pretoria Agreement Implementation",
+    "lastUpdate": "February 2025",
+    "summary": "The November 2022 Pretoria Agreement ended active fighting between the Ethiopian federal government and Tigray forces. However, implementation has been slow. Eritrean forces remain in parts of Tigray. New conflicts in Amhara and Oromia regions complicate the picture.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "Amhara conflict intensifies with Fano militia clashes; complicates national peace",
+        "status": "stalled"
+      },
+      {
+        "date": "Sep 2024",
+        "event": "Tigray interim administration established but with limited authority",
+        "status": "progress"
+      },
+      {
+        "date": "Mar 2024",
+        "event": "Disarmament of Tigray forces progresses but Eritrean withdrawal remains incomplete",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2022",
+        "event": "Pretoria Agreement signed between Ethiopian government and TPLF",
+        "status": "progress"
+      },
+      {
+        "date": "Jan 2022",
+        "event": "African Union appoints Olusegun Obasanjo as High Representative for Horn of Africa",
+        "status": "progress"
+      }
+    ],
+    "whatNeedsToHappen": "Full withdrawal of Eritrean forces from Tigray, comprehensive transitional justice and accountability processes, resolution of the Amhara conflict through dialogue, and rebuilding of institutions destroyed during the war.",
+    "keyActors": [
+      "African Union",
+      "United States",
+      "European Union",
+      "Eritrea",
+      "Kenya"
+    ]
+  },
+  {
+    "conflictId": "yemen",
+    "status": "stalled",
+    "statusLabel": "Ceasefire Efforts Stalled",
+    "lastUpdate": "March 2025",
+    "summary": "A 2022 UN-mediated truce brought temporary relief but expired and was not renewed. Houthi attacks on Red Sea shipping since late 2023 have complicated diplomacy. Saudi Arabia has been in direct talks with the Houthis about a bilateral deal, but a comprehensive settlement remains elusive.",
+    "milestones": [
+      {
+        "date": "Dec 2024",
+        "event": "Saudi-Houthi talks continue on bilateral framework but comprehensive peace remains distant",
+        "status": "stalled"
+      },
+      {
+        "date": "Jan 2024",
+        "event": "US and UK launch strikes against Houthi positions in response to Red Sea attacks",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2023",
+        "event": "Houthis begin attacks on commercial shipping in the Red Sea",
+        "status": "stalled"
+      },
+      {
+        "date": "Oct 2022",
+        "event": "UN-mediated truce expires without renewal despite progress during its term",
+        "status": "stalled"
+      },
+      {
+        "date": "Apr 2022",
+        "event": "UN-brokered nationwide truce begins; longest period of reduced fighting",
+        "status": "progress"
+      }
+    ],
+    "whatNeedsToHappen": "A comprehensive ceasefire agreement involving all Yemeni parties, not just a Saudi-Houthi bilateral deal. Inclusive political dialogue must address governance, security sector reform, and transitional justice. Houthi Red Sea attacks must cease as part of any deal.",
+    "keyActors": [
+      "Saudi Arabia",
+      "United Nations",
+      "Oman",
+      "United States",
+      "Iran",
+      "UAE"
+    ]
+  },
+  {
+    "conflictId": "drc",
+    "status": "stalled",
+    "statusLabel": "Regional Talks Stalled",
+    "lastUpdate": "March 2025",
+    "summary": "Multiple diplomatic tracks including the Luanda process (Angola-mediated) and the Nairobi process have failed to stop M23's advance. Rwanda denies involvement despite overwhelming evidence. The UN peacekeeping mission MONUSCO has begun withdrawing, creating a security vacuum.",
+    "milestones": [
+      {
+        "date": "Feb 2025",
+        "event": "M23 captures Goma, the largest city in eastern DRC; major humanitarian crisis",
+        "status": "stalled"
+      },
+      {
+        "date": "Aug 2024",
+        "event": "Luanda talks produce ceasefire agreement; violated within days",
+        "status": "stalled"
+      },
+      {
+        "date": "Dec 2023",
+        "event": "MONUSCO begins phased withdrawal from DRC at government request",
+        "status": "stalled"
+      },
+      {
+        "date": "Mar 2023",
+        "event": "East African Community regional force deploys but fails to deter M23",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2022",
+        "event": "M23 captures territory near Goma; Nairobi process produces ceasefire that doesn't hold",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "Rwanda must be held accountable for its support of M23 through credible international pressure. A robust security force must replace MONUSCO. Root causes including governance failures, mineral exploitation, and land disputes must be addressed through an inclusive national dialogue.",
+    "keyActors": [
+      "Angola",
+      "African Union",
+      "Rwanda",
+      "United States",
+      "European Union",
+      "United Nations"
+    ]
+  },
+  {
+    "conflictId": "sahel",
+    "status": "no-process",
+    "statusLabel": "No Peace Process",
+    "lastUpdate": "February 2025",
+    "summary": "Military juntas in Mali, Burkina Faso, and Niger have withdrawn from ECOWAS and rejected Western diplomatic frameworks. The Alliance of Sahel States now cooperates primarily with Russia. There is no meaningful peace process for the jihadist insurgency, and government forces increasingly target civilians alongside armed groups.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "Alliance of Sahel States formalizes mutual defense pact; rejects ECOWAS engagement",
+        "status": "stalled"
+      },
+      {
+        "date": "Jul 2024",
+        "event": "Mali, Burkina Faso, and Niger formally exit ECOWAS",
+        "status": "stalled"
+      },
+      {
+        "date": "Sep 2023",
+        "event": "France completes military withdrawal from Niger following coup",
+        "status": "stalled"
+      },
+      {
+        "date": "Jul 2023",
+        "event": "Military coup in Niger; ECOWAS threatens intervention but backs down",
+        "status": "stalled"
+      },
+      {
+        "date": "Jan 2022",
+        "event": "Mali expels French ambassador; Wagner Group mercenaries deploy",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "Restoration of civilian governance through negotiated transitions. Community-level dialogue with armed groups willing to disarm. A regional security framework that addresses the root causes of extremism including poverty, poor governance, and climate change.",
+    "keyActors": [
+      "ECOWAS",
+      "African Union",
+      "France",
+      "Russia",
+      "United Nations",
+      "Algeria"
+    ]
+  },
+  {
+    "conflictId": "syria",
+    "status": "active-talks",
+    "statusLabel": "Political Transition Underway",
+    "lastUpdate": "March 2025",
+    "summary": "The fall of the Assad regime in late 2024 has opened a new chapter. HTS-led transitional authorities are attempting to establish governance, but the country remains fragmented among multiple armed factions. International engagement is cautious, with sanctions relief and recognition conditioned on inclusive governance.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "Transitional government formed in Damascus; international community engages cautiously",
+        "status": "progress"
+      },
+      {
+        "date": "Dec 2024",
+        "event": "Assad regime collapses after rapid rebel offensive; Assad flees to Russia",
+        "status": "progress"
+      },
+      {
+        "date": "Nov 2024",
+        "event": "HTS-led forces launch offensive from Idlib, rapidly capturing Aleppo and Hama",
+        "status": "progress"
+      },
+      {
+        "date": "Feb 2024",
+        "event": "UN Constitutional Committee talks remain suspended with no progress",
+        "status": "stalled"
+      },
+      {
+        "date": "May 2023",
+        "event": "Arab League readmits Syria but normalization with Assad fails to bring peace",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "An inclusive political transition that represents all of Syria's communities. Disarmament and integration of armed factions. Lifting of sanctions conditioned on human rights progress. International support for reconstruction. Accountability for crimes committed during the civil war.",
+    "keyActors": [
+      "Turkey",
+      "United States",
+      "Russia",
+      "United Nations",
+      "Gulf States",
+      "European Union"
+    ]
+  },
+  {
+    "conflictId": "haiti",
+    "status": "no-process",
+    "statusLabel": "No Peace Process",
+    "lastUpdate": "March 2025",
+    "summary": "Haiti has no functioning government capable of negotiating with armed gangs. The Multinational Security Support mission led by Kenya has deployed but lacks resources and mandate to address the crisis. Gang leaders have shown no interest in negotiation, and political legitimacy remains contested.",
+    "milestones": [
+      {
+        "date": "Feb 2025",
+        "event": "MSS mission expanded with additional Kenyan and Caribbean forces but remains under-strength",
+        "status": "progress"
+      },
+      {
+        "date": "Oct 2024",
+        "event": "UN Security Council renews MSS mandate for another year",
+        "status": "progress"
+      },
+      {
+        "date": "Jun 2024",
+        "event": "Kenyan-led Multinational Security Support mission begins deployment",
+        "status": "progress"
+      },
+      {
+        "date": "Mar 2024",
+        "event": "Gang coalition forces resignation of PM Ariel Henry; transitional council formed",
+        "status": "stalled"
+      },
+      {
+        "date": "Oct 2023",
+        "event": "UN Security Council authorizes MSS mission for Haiti",
+        "status": "progress"
+      }
+    ],
+    "whatNeedsToHappen": "A credibly resourced security mission to break gang control of the capital. Restoration of democratic governance through elections. Economic development to address the poverty driving gang recruitment. Disruption of arms and money flows sustaining gang operations.",
+    "keyActors": [
+      "Kenya",
+      "United States",
+      "United Nations",
+      "CARICOM",
+      "Canada",
+      "France"
+    ]
+  },
+  {
+    "conflictId": "south-china-sea",
+    "status": "stalled",
+    "statusLabel": "Code of Conduct Negotiations Stalled",
+    "lastUpdate": "March 2025",
+    "summary": "Negotiations between ASEAN and China on a binding Code of Conduct have dragged on for over two decades without result. China continues to expand its military presence while using coast guard and maritime militia to pressure rival claimants. The Philippines has taken the most confrontational approach, backed by its US alliance.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "Philippines and China agree to de-escalation mechanisms after Second Thomas Shoal confrontations",
+        "status": "progress"
+      },
+      {
+        "date": "Jul 2024",
+        "event": "ASEAN-China talks on Code of Conduct continue but remain non-binding draft",
+        "status": "stalled"
+      },
+      {
+        "date": "Mar 2024",
+        "event": "Escalation at Second Thomas Shoal with Chinese water cannon and Philippine supply missions",
+        "status": "stalled"
+      },
+      {
+        "date": "Apr 2023",
+        "event": "Philippines grants US access to additional military bases near disputed areas",
+        "status": "stalled"
+      },
+      {
+        "date": "Jul 2016",
+        "event": "Permanent Court of Arbitration rules against China's claims; ruling ignored",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "A legally binding Code of Conduct with enforcement mechanisms. China must comply with the 2016 arbitral tribunal ruling. Claimant states need diplomatic frameworks for joint resource development in disputed areas. Military confidence-building measures to prevent accidental escalation.",
+    "keyActors": [
+      "ASEAN",
+      "China",
+      "Philippines",
+      "United States",
+      "Vietnam",
+      "Japan"
+    ]
+  },
+  {
+    "conflictId": "taiwan",
+    "status": "no-process",
+    "statusLabel": "No Diplomatic Framework",
+    "lastUpdate": "March 2025",
+    "summary": "There is no peace process because the parties disagree on the fundamental nature of the dispute. China considers Taiwan a domestic matter, while Taiwan functions as a self-governing democracy. Cross-strait communication channels are largely frozen since 2016. Military posturing continues to escalate.",
+    "milestones": [
+      {
+        "date": "Oct 2024",
+        "event": "China conducts large-scale military drills around Taiwan following political statements",
+        "status": "stalled"
+      },
+      {
+        "date": "May 2024",
+        "event": "New Taiwan president inaugurated; Beijing responds with military exercises",
+        "status": "stalled"
+      },
+      {
+        "date": "Apr 2023",
+        "event": "China conducts major military exercises after Taiwan president's US transit",
+        "status": "stalled"
+      },
+      {
+        "date": "Aug 2022",
+        "event": "China conducts unprecedented military exercises after Pelosi's Taiwan visit",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2015",
+        "event": "Ma-Xi summit in Singapore; last direct leader-level contact between the two sides",
+        "status": "progress"
+      }
+    ],
+    "whatNeedsToHappen": "Restoration of cross-strait communication channels. Military confidence-building measures to prevent accidental conflict. International consensus on maintaining the status quo while supporting peaceful resolution. Economic interdependence as a stabilizing factor.",
+    "keyActors": [
+      "United States",
+      "China",
+      "Japan",
+      "European Union",
+      "Australia",
+      "ASEAN"
+    ]
+  },
+  {
+    "conflictId": "north-korea",
+    "status": "no-process",
+    "statusLabel": "No Diplomatic Process",
+    "lastUpdate": "March 2025",
+    "summary": "Diplomatic engagement with North Korea has been frozen since the collapse of Trump-Kim talks in 2019. North Korea has dramatically accelerated weapons testing and deepened military cooperation with Russia. Pyongyang has declared it is no longer interested in denuclearization talks and has enshrined nuclear status in its constitution.",
+    "milestones": [
+      {
+        "date": "Jun 2024",
+        "event": "Putin visits Pyongyang; signs mutual defense pact with Kim Jong Un",
+        "status": "stalled"
+      },
+      {
+        "date": "Nov 2023",
+        "event": "North Korea launches spy satellite; claims to have photographed US bases",
+        "status": "stalled"
+      },
+      {
+        "date": "Sep 2023",
+        "event": "Kim visits Russia; arms transfer agreement reportedly reached",
+        "status": "stalled"
+      },
+      {
+        "date": "Jan 2022",
+        "event": "North Korea resumes ICBM testing after self-imposed moratorium ends",
+        "status": "stalled"
+      },
+      {
+        "date": "Feb 2019",
+        "event": "Hanoi summit between Trump and Kim collapses with no agreement",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "A realistic diplomatic framework that moves beyond all-or-nothing denuclearization demands. Arms control measures as a first step. Engagement on humanitarian issues to build confidence. China and Russia must be willing to enforce sanctions rather than provide a lifeline.",
+    "keyActors": [
+      "United States",
+      "South Korea",
+      "China",
+      "Japan",
+      "Russia",
+      "United Nations"
+    ]
+  },
+  {
+    "conflictId": "somalia",
+    "status": "active-talks",
+    "statusLabel": "Stabilization Ongoing",
+    "lastUpdate": "February 2025",
+    "summary": "The Somali government has made gains against Al-Shabaab with support from the African Union Transition Mission in Somalia (ATMIS). However, Al-Shabaab remains resilient and controls rural territory. The government offensive has slowed, and the AU mission transition to Somali-led security faces serious capacity challenges.",
+    "milestones": [
+      {
+        "date": "Jan 2025",
+        "event": "New AU mission AUSSOM replaces ATMIS with a smaller footprint; Somali forces take greater lead",
+        "status": "progress"
+      },
+      {
+        "date": "Jun 2024",
+        "event": "ATMIS drawdown continues on schedule despite concerns about Somali readiness",
+        "status": "stalled"
+      },
+      {
+        "date": "Jan 2024",
+        "event": "Ethiopia deploys troops to Somalia outside AU framework; tensions with other troop contributors",
+        "status": "stalled"
+      },
+      {
+        "date": "Aug 2023",
+        "event": "Government offensive against Al-Shabaab stalls after initial gains in 2022",
+        "status": "stalled"
+      },
+      {
+        "date": "Sep 2022",
+        "event": "Major government offensive against Al-Shabaab with clan militia support shows early success",
+        "status": "progress"
+      }
+    ],
+    "whatNeedsToHappen": "Building Somali security force capacity to sustain gains without AU support. Inclusive governance that addresses clan grievances fueling Al-Shabaab recruitment. Economic development and basic services in recovered areas. Diplomatic resolution of Ethiopia-Somalia tensions.",
+    "keyActors": [
+      "African Union",
+      "United States",
+      "Turkey",
+      "Ethiopia",
+      "Kenya",
+      "United Nations"
+    ]
+  },
+  {
+    "conflictId": "nagorno-karabakh",
+    "status": "active-talks",
+    "statusLabel": "Peace Treaty Negotiations",
+    "lastUpdate": "March 2025",
+    "summary": "Armenia and Azerbaijan are negotiating a comprehensive peace treaty following Azerbaijan's takeover of Nagorno-Karabakh in September 2023. Key sticking points include border demarcation, transport corridors, and the rights of displaced Armenians. The ethnic cleansing of Karabakh Armenians casts a shadow over negotiations.",
+    "milestones": [
+      {
+        "date": "Feb 2025",
+        "event": "Border demarcation committees resume work on contested segments",
+        "status": "progress"
+      },
+      {
+        "date": "Oct 2024",
+        "event": "Armenia and Azerbaijan exchange draft peace treaty texts",
+        "status": "progress"
+      },
+      {
+        "date": "Apr 2024",
+        "event": "Armenia agrees to return four border villages to Azerbaijan as confidence-building measure",
+        "status": "progress"
+      },
+      {
+        "date": "Sep 2023",
+        "event": "Azerbaijan launches military operation; entire Armenian population flees Karabakh",
+        "status": "stalled"
+      },
+      {
+        "date": "Dec 2022",
+        "event": "Azerbaijan blockades Lachin corridor, cutting off 120,000 Karabakh Armenians",
+        "status": "stalled"
+      }
+    ],
+    "whatNeedsToHappen": "A comprehensive peace treaty addressing borders, transport corridors, and minority rights. International guarantees for the rights and potential return of displaced Armenians. Accountability for the blockade and forced displacement. Normalization of Armenia-Turkey relations as part of a regional settlement.",
+    "keyActors": [
+      "European Union",
+      "United States",
+      "Russia",
+      "Turkey",
+      "Georgia"
+    ]
+  }
+]

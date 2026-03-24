@@ -98,6 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (route === 'methodology') {
       const { renderMethodology } = await import('./components/methodology.js');
       renderMethodology(container);
+    } else if (route === 'brief' && id) {
+      const { renderBriefing } = await import('./components/briefing.js');
+      const { peaceProgress } = await import('./data/peace-progress.js');
+      renderBriefing(id, container, currentConflicts, peaceProgress);
+    } else if (route === 'api') {
+      const { renderApiDocs } = await import('./components/api-docs.js');
+      renderApiDocs(container);
+    } else if (route === 'report') {
+      const { renderStateOfPeace } = await import('./components/state-of-peace.js');
+      renderStateOfPeace(container);
     }
   });
 
@@ -134,5 +144,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initAnimations();
     initSmoothScroll();
   }, 100);
+
+  // v5: Search
+  import('./components/search.js').then(({ initSearch }) => initSearch());
+
+  // v5: PWA Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
 
 });

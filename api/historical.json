@@ -1,0 +1,202 @@
+[
+  {
+    "date": "1914–1918",
+    "name": "World War I",
+    "desc": "The \"war to end all wars\" killed 20 million people. Triggered by a network of alliances, imperial competition, nationalism, and the assassination of Archduke Franz Ferdinand. It demonstrated how interconnected alliance systems could turn a local crisis into a global catastrophe.",
+    "howEnded": "Military exhaustion and the 1918 Armistice. The Treaty of Versailles imposed harsh reparations on Germany — creating the grievances that would fuel WWII. The League of Nations was created to prevent future wars but lacked enforcement power.",
+    "lesson": "Punitive peace creates future wars. Alliances without communication channels create escalation spirals. International institutions need enforcement power, not just aspirations.",
+    "lat": 49,
+    "lng": 6,
+    "bounds": [
+      [
+        35,
+        -10
+      ],
+      [
+        55,
+        45
+      ]
+    ],
+    "casualties": 20000000
+  },
+  {
+    "date": "1939–1945",
+    "name": "World War II",
+    "desc": "The deadliest conflict in history: 70-85 million deaths. Arose from WWI's unresolved grievances, global economic depression, fascist ideology, expansionism, and the Holocaust. Ended with nuclear weapons — introducing an existential threat to humanity.",
+    "howEnded": "Unconditional surrender after total military defeat. Followed by the Marshall Plan (rebuilding former enemies), the United Nations, NATO, and the European integration project. Unlike WWI, victors invested in rebuilding the defeated nations.",
+    "lesson": "Invest in rebuilding enemies rather than punishing them. Create strong international institutions. Economic interdependence between former enemies (EU) can make war unthinkable. Never ignore early warning signs of genocide.",
+    "lat": 50,
+    "lng": 10,
+    "bounds": [
+      [
+        -40,
+        -180
+      ],
+      [
+        70,
+        180
+      ]
+    ],
+    "casualties": 75000000
+  },
+  {
+    "date": "1947–1991",
+    "name": "The Cold War",
+    "desc": "A 44-year global confrontation between the US and USSR that never became a direct war — largely because of nuclear deterrence (MAD). Instead, it was fought through proxy wars (Korea, Vietnam, Afghanistan, Angola, Central America), an arms race, space race, and ideological competition.",
+    "howEnded": "Internal economic exhaustion of the USSR, democratic movements in Eastern Europe, Gorbachev's reforms (glasnost and perestroika), diplomatic engagement (Helsinki Accords, arms control treaties), and ultimately the peaceful dissolution of the Soviet Union in 1991.",
+    "lesson": "Deterrence can prevent direct war but doesn't prevent suffering (proxy wars killed millions). Diplomacy and arms control save lives. Internal reform and economic pressure can change even the most entrenched systems. Peaceful transitions are possible even from the most dangerous standoffs.",
+    "lat": 45,
+    "lng": 0,
+    "bounds": [
+      [
+        -60,
+        -180
+      ],
+      [
+        80,
+        180
+      ]
+    ],
+    "casualties": 10000000
+  },
+  {
+    "date": "1955–1975",
+    "name": "Vietnam War",
+    "desc": "The US intervened to prevent communist unification of Vietnam, escalating into one of the most destructive wars of the Cold War era. 3.5 million Vietnamese and 58,000 Americans died. Massive bombing campaigns, chemical weapons (Agent Orange), and civilian suffering.",
+    "howEnded": "Military stalemate, domestic anti-war movement in the US, Paris Peace Accords (1973), US withdrawal, and North Vietnamese military victory (1975). Vietnam reunified under communist rule but eventually normalized relations with the US and integrated into the global economy.",
+    "lesson": "Military force cannot defeat a determined national liberation movement. Domestic public opinion is a critical factor. Former enemies can reconcile — the US and Vietnam are now strategic partners. Ideological wars often end through economic pragmatism.",
+    "lat": 16,
+    "lng": 107,
+    "bounds": [
+      [
+        8,
+        102
+      ],
+      [
+        23,
+        110
+      ]
+    ],
+    "casualties": 3500000
+  },
+  {
+    "date": "1994",
+    "name": "Rwandan Genocide",
+    "desc": "In just 100 days, approximately 800,000 Tutsi and moderate Hutu were systematically murdered by Hutu extremists. The international community, including the UN, failed to intervene despite clear warnings. A preventable catastrophe that exposed the hollowness of \"never again.\"",
+    "howEnded": "The Rwandan Patriotic Front (RPF) under Paul Kagame militarily defeated the genocidal regime. Afterward, Rwanda established community-based Gacaca courts for transitional justice, abolished ethnic identity cards, and rebuilt with a focus on national unity and economic development.",
+    "lesson": "Early warning signs of genocide must be acted upon — the international community had clear intelligence but chose not to intervene. Dehumanizing language and propaganda precede mass violence. Community-based justice can support reconciliation. A society can rebuild even from the worst atrocity.",
+    "lat": -2,
+    "lng": 29.5,
+    "bounds": [
+      [
+        -3,
+        28
+      ],
+      [
+        -1,
+        31
+      ]
+    ],
+    "casualties": 800000
+  },
+  {
+    "date": "1968–1998",
+    "name": "The Troubles (Northern Ireland)",
+    "desc": "A 30-year conflict between unionists (mostly Protestant, wanting to remain part of the UK) and nationalists (mostly Catholic, seeking union with Ireland). Over 3,500 people were killed in bombings, shootings, and state violence in a deeply divided society.",
+    "howEnded": "The Good Friday Agreement (1998) — a masterwork of compromise. Power-sharing government between unionists and nationalists. North-South institutions linking Northern Ireland and Ireland. Decommissioning of weapons. Prisoner releases. A commitment that Northern Ireland's status would be decided by democratic consent of its people.",
+    "lesson": "Even the most entrenched identity conflicts can be resolved through creative power-sharing arrangements. All parties must be included in negotiations (including those with violent histories). Compromise means nobody gets everything they want. Economic development and generational change reinforce peace.",
+    "lat": 54.6,
+    "lng": -6.6,
+    "bounds": [
+      [
+        54,
+        -8
+      ],
+      [
+        55.5,
+        -5
+      ]
+    ],
+    "casualties": 3500
+  },
+  {
+    "date": "1948–1994",
+    "name": "South African Apartheid",
+    "desc": "A system of institutionalized racial segregation and oppression in South Africa, where the white minority ruled over the Black majority through discriminatory laws, forced removals, imprisonment of dissidents, and violence.",
+    "howEnded": "A combination of sustained internal resistance (ANC, labor unions, civic movements), international sanctions and boycotts, economic pressure, and visionary leadership from both Nelson Mandela and F.W. de Klerk. The negotiated transition led to the first free elections in 1994 and the Truth and Reconciliation Commission.",
+    "lesson": "Sustained nonviolent resistance combined with international pressure can topple even entrenched systems. Truth and reconciliation processes allow societies to acknowledge the past without endless cycles of retribution. Leadership that prioritizes the future over revenge is transformative. Economic sanctions and cultural boycotts matter.",
+    "lat": -29,
+    "lng": 25,
+    "bounds": [
+      [
+        -35,
+        16
+      ],
+      [
+        -22,
+        33
+      ]
+    ],
+    "casualties": 21000
+  },
+  {
+    "date": "1992–1995",
+    "name": "Bosnian War",
+    "desc": "The breakup of Yugoslavia led to Europe's worst violence since WWII. Ethnic cleansing, the siege of Sarajevo, and the Srebrenica massacre (8,000 Bosniak men and boys murdered) exposed the failure of the international community to prevent genocide in Europe.",
+    "howEnded": "NATO intervention (airstrikes), US-brokered Dayton Peace Accords (1995) creating a complex power-sharing structure between Bosniaks, Croats, and Serbs. The International Criminal Tribunal for the former Yugoslavia (ICTY) established accountability for war crimes.",
+    "lesson": "International intervention must be timely — delayed action costs lives. Post-conflict governance structures must balance ethnic concerns while building shared institutions. International criminal tribunals establish accountability and deter future atrocities. However, Dayton's ethnic power-sharing also entrenched divisions — a cautionary tale about freezing identity into governance.",
+    "lat": 44,
+    "lng": 18,
+    "bounds": [
+      [
+        42.5,
+        15.5
+      ],
+      [
+        45.5,
+        19.5
+      ]
+    ],
+    "casualties": 100000
+  },
+  {
+    "date": "1964–2016",
+    "name": "Colombian Civil War (FARC)",
+    "desc": "A 52-year armed conflict between the Colombian government and FARC guerrillas, also involving paramilitaries and drug cartels. Over 260,000 killed, 7 million displaced. One of the Western Hemisphere's longest and most complex conflicts.",
+    "howEnded": "The 2016 Peace Agreement, negotiated over 4 years in Havana. It included FARC disarmament, political participation for ex-combatants, transitional justice (Special Jurisdiction for Peace), rural development programs, and drug crop substitution. A referendum initially rejected the deal, but a revised version was passed through Congress.",
+    "lesson": "Even 52-year wars can end through negotiation. Comprehensive agreements must address root causes (land, poverty, political exclusion), not just stop the fighting. Transitional justice that balances accountability with peace incentives is essential. Implementation is harder than signing — ongoing commitment is crucial.",
+    "lat": 4.5,
+    "lng": -74,
+    "bounds": [
+      [
+        -4,
+        -82
+      ],
+      [
+        13,
+        -67
+      ]
+    ],
+    "casualties": 260000
+  },
+  {
+    "date": "1950–1953",
+    "name": "Korean War",
+    "desc": "The first major proxy war of the Cold War. North Korea invaded South Korea, the US/UN intervened, China entered on the North's side, and the conflict killed 3-4 million people. It ended in an armistice, not a peace treaty — technically still ongoing.",
+    "howEnded": "An armistice agreement in 1953 created the DMZ and froze the conflict. No peace treaty was ever signed. The two Koreas remain divided, with radically different systems. South Korea transformed from a war-ravaged country into a thriving democracy and economic powerhouse.",
+    "lesson": "Frozen conflicts can persist for generations. Armistices are not peace — unresolved conflicts can re-escalate at any time. Economic development and democratization don't require resolving the underlying conflict, but they create conditions for eventual resolution. Investment in a former war zone (South Korea) can produce remarkable transformation.",
+    "lat": 38,
+    "lng": 127,
+    "bounds": [
+      [
+        33,
+        124
+      ],
+      [
+        43,
+        131
+      ]
+    ],
+    "casualties": 3500000
+  }
+]

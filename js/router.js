@@ -40,6 +40,9 @@ function handleRoute() {
   else if (hash.startsWith('/peace-progress')) { route = 'peace-progress'; }
   else if (hash.startsWith('/simulate')) { route = 'simulate'; id = hash.split('/simulate/')[1] || 'select'; }
   else if (hash.startsWith('/methodology')) { route = 'methodology'; }
+  else if (hash.startsWith('/brief/')) { route = 'brief'; id = hash.split('/brief/')[1]; }
+  else if (hash.startsWith('/api')) { route = 'api'; }
+  else if (hash.startsWith('/report')) { route = 'report'; }
 
   // Show/hide containers
   if (route === 'home') {
