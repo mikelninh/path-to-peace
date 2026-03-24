@@ -210,6 +210,9 @@ export function createGlobalMap(containerId, conflicts) {
     globalMap.scrollWheelZoom.disable();
   });
 
+  // Mobile: add "tap to interact" overlay to prevent scroll-jacking
+  initMapTouchOverlay(container, globalMap);
+
   return globalMap;
 }
 
@@ -260,6 +263,78 @@ export function resetView() {
 
 export function getGlobalMap() {
   return globalMap;
+}
+
+function initMapTouchOverlay(container, map) {
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  if (!isMobile) return;
+
+  // Find the .map-wrapper parent (or use container itself)
+  const wrapper = container.closest('.map-wrapper') || container.parentElement;
+  if (!wrapper) return;
+
+  // Ensure wrapper is positioned for absolute children
+  const wrapperPosition = getComputedStyle(wrapper).position;
+  if (wrapperPosition === 'static') {
+    wrapper.style.position = 'relative';
+  }
+
+  // Disable map interaction by default on mobile
+  map.dragging.disable();
+  map.touchZoom.disable();
+  map.doubleClickZoom.disable();
+
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'map-touch-overlay';
+  overlay.innerHTML = '<span class="map-touch-label">Tap to explore the map</span>';
+
+  // Create exit button
+  const exitBtn = document.createElement('button');
+  exitBtn.className = 'map-exit-btn';
+  exitBtn.innerHTML = '&times;';
+  exitBtn.setAttribute('aria-label', 'Exit map interaction');
+
+  wrapper.appendChild(overlay);
+  wrapper.appendChild(exitBtn);
+
+  // Tap overlay: enable map interaction
+  overlay.addEventListener('click', () => {
+    overlay.classList.add('hidden');
+    exitBtn.classList.add('visible');
+    map.dragging.enable();
+    map.touchZoom.enable();
+    map.doubleClickZoom.enable();
+  });
+
+  // Exit button: disable map interaction, re-show overlay
+  exitBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    overlay.classList.remove('hidden');
+    exitBtn.classList.remove('visible');
+    map.dragging.disable();
+    map.touchZoom.disable();
+    map.doubleClickZoom.disable();
+  });
+
+  // Also listen for media query changes to clean up on resize to desktop
+  const mql = window.matchMedia('(max-width: 768px)');
+  mql.addEventListener('change', (e) => {
+    if (!e.matches) {
+      // Switched to desktop: remove overlay, re-enable interactions
+      overlay.classList.add('hidden');
+      exitBtn.classList.remove('visible');
+      map.dragging.enable();
+      map.touchZoom.enable();
+      map.doubleClickZoom.enable();
+    } else {
+      // Switched back to mobile: re-show overlay, disable interactions
+      overlay.classList.remove('hidden');
+      map.dragging.disable();
+      map.touchZoom.disable();
+      map.doubleClickZoom.disable();
+    }
+  });
 }
 
 function createPopup(c) {
