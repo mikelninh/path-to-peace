@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a25;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="overlayGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0a0a0f;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Gradient overlay for depth -->
+  <rect width="1200" height="630" fill="url(#overlayGradient)"/>
+  
+  <!-- Peace symbol circle background (subtle) -->
+  <circle cx="600" cy="180" r="100" fill="none" stroke="#4ecdc4" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Peace symbol (☮) -->
+  <g transform="translate(600, 180)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#4ecdc4" stroke-width="6"/>
+    
+    <!-- Vertical line -->
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#4ecdc4" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Left diagonal -->
+    <line x1="0" y1="-60" x2="-65" y2="60" stroke="#4ecdc4" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Right diagonal -->
+    <line x1="0" y1="-60" x2="65" y2="60" stroke="#4ecdc4" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Title: "The Path to Peace" -->
+  <text 
+    x="600" 
+    y="330" 
+    font-family="Arial, sans-serif" 
+    font-size="72" 
+    font-weight="bold" 
+    text-anchor="middle" 
+    fill="white"
+  >The Path to Peace</text>
+  
+  <!-- Subtitle: "Understanding World Conflicts" -->
+  <text 
+    x="600" 
+    y="385" 
+    font-family="Arial, sans-serif" 
+    font-size="36" 
+    text-anchor="middle" 
+    fill="#a0a0b0"
+  >Understanding World Conflicts</text>
+  
+  <!-- Bottom text: "An Open Educational Resource • Free Forever" -->
+  <text 
+    x="600" 
+    y="590" 
+    font-family="Arial, sans-serif" 
+    font-size="20" 
+    text-anchor="middle" 
+    fill="#606070"
+    opacity="0.8"
+  >An Open Educational Resource • Free Forever</text>
+</svg>

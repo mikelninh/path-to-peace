@@ -33,21 +33,21 @@ export const quickAnswers = [
     category: 'endings',
     question: 'How do wars typically end?',
     answer: 'Research shows wars end through five main paths: military victory (one side wins), negotiated settlement (both sides agree to terms), ceasefire that freezes the conflict, exhaustion and stalemate, or external intervention. Negotiated settlements that address root causes tend to produce the most durable peace, though they are the hardest to achieve.',
-    link: '#/endings',
+    link: '#how-wars-end',
     linkText: 'Explore how wars end'
   },
   {
     category: 'causes',
     question: 'What are the root causes of most wars?',
     answer: 'Most armed conflicts stem from a combination of factors: resource competition (land, water, minerals, oil), identity-based grievances (ethnic, religious, national), governance failures (corruption, exclusion, repression), and external interference (arms sales, proxy conflicts, colonial legacies). Rarely does a single cause explain a war \u2014 it is usually a toxic combination.',
-    link: '#/causes',
+    link: '#root-causes',
     linkText: 'Explore root causes'
   },
   {
     category: 'actions',
     question: 'What can ordinary people do to promote peace?',
     answer: 'Individual actions that contribute to peace include contacting elected representatives about foreign policy, supporting verified humanitarian organizations, educating yourself and others about conflicts, practicing media literacy to resist propaganda, and building bridges across divides in your own community. Collective civic pressure has historically been a key driver of policy change.',
-    link: '#/actions',
+    link: '#take-action',
     linkText: 'See what you can do'
   },
   {
@@ -61,28 +61,28 @@ export const quickAnswers = [
     category: 'historical',
     question: 'How did the Northern Ireland conflict end?',
     answer: 'The Troubles in Northern Ireland ended through the 1998 Good Friday Agreement after 30 years of violence that killed over 3,500 people. Key ingredients included war-weary populations, backchannel negotiations, inclusive power-sharing structures, external mediation (the US and EU), and a willingness by former enemies to share governance. It remains one of history\'s best examples of a negotiated peace.',
-    link: '#/conflict/northern-ireland',
-    linkText: 'Northern Ireland case study'
+    link: '#historical',
+    linkText: 'Historical lessons'
   },
   {
     category: 'historical',
     question: 'What lessons does the Rwandan genocide teach us?',
     answer: 'The 1994 Rwandan genocide, which killed an estimated 800,000 people in 100 days, demonstrated the catastrophic consequences of dehumanizing propaganda, international inaction, and ethnic divisions weaponized by political leaders. Rwanda\'s post-genocide recovery, while imperfect, offers lessons about justice mechanisms, reconciliation processes, and the importance of early warning systems.',
-    link: '#/conflict/rwanda',
-    linkText: 'Rwanda case study'
+    link: '#historical',
+    linkText: 'Historical lessons'
   },
   {
     category: 'patterns',
     question: 'Are there patterns in how conflicts escalate?',
     answer: 'Yes, conflict researchers have identified recurring escalation patterns: dehumanization of the other side, arms buildups, breakdown of communication channels, mobilization of identity-based grievances, and economic crises that create desperation. Recognizing these patterns early is essential for prevention \u2014 it is far cheaper and more effective to prevent a war than to end one.',
-    link: '#/patterns',
+    link: '#patterns',
     linkText: 'Explore conflict patterns'
   },
   {
     category: 'current',
     question: 'How serious is the risk of nuclear conflict?',
     answer: 'The risk of nuclear conflict is the highest it has been since the Cold War, driven by the erosion of arms control treaties, modernization of nuclear arsenals, the Russia-Ukraine war, and rising tensions between nuclear-armed states. Even a limited nuclear exchange would cause catastrophic humanitarian and environmental consequences globally.',
-    link: '#/current',
+    link: '#current',
     linkText: 'View current conflicts'
   },
   {

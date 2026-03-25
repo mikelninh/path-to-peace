@@ -2,10 +2,11 @@
 // Service Worker — Offline Access
 // ============================================
 
-const CACHE_NAME = 'peace-v5';
+const CACHE_NAME = 'peace-v6';
 const CORE_ASSETS = [
   './',
   './index.html',
+  './manifest.json',
   './styles/main.css',
   './styles/variables.css',
   './styles/base.css',
@@ -29,6 +30,8 @@ const CORE_ASSETS = [
   './styles/api-docs.css',
   './styles/state-of-peace.css',
   './styles/search.css',
+  './styles/chat.css',
+  './styles/dividers.css',
   './styles/animations.css',
   './styles/responsive.css',
   './styles/scrollytelling.css',
@@ -36,6 +39,12 @@ const CORE_ASSETS = [
   './lib/leaflet.min.css',
   './js/main.js',
   './js/router.js',
+  './js/components/icons.js',
+  './js/components/hero-globe.js',
+  './js/components/animations.js',
+  './js/components/nav.js',
+  './js/components/cards.js',
+  './js/components/chat-widget.js',
   './js/data/conflicts-current.js',
   './js/data/conflicts-historical.js',
   './js/data/causes.js',
@@ -43,6 +52,7 @@ const CORE_ASSETS = [
   './js/data/patterns.js',
   './js/data/actions.js',
   './js/data/stats.js',
+  './js/data/quick-answers.js',
 ];
 
 // Install — cache core assets

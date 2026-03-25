@@ -202,7 +202,7 @@ export const reportData = {
       status: 'critical',
       summary:
         'The Middle East experienced a severe escalation of violence following Hamas\'s October 7, 2023 attack on Israel and the subsequent Israeli military campaign in Gaza, which has killed over 45,000 Palestinians according to Gaza health authorities and caused near-total destruction of civilian infrastructure. The conflict expanded into Lebanon, with Israel conducting a major military operation against Hezbollah, and into Yemen, where the Houthis launched attacks on Red Sea shipping, prompting US and UK military strikes. Syria remains fractured, Libya is split between rival governments, and Yemen\'s civil war persists despite a fragile truce. Iran\'s regional posture and its nuclear program continue to be sources of acute tension.',
-      conflicts: ['israel-palestine', 'syria', 'yemen', 'libya'],
+      conflicts: ['israel-palestine', 'syria', 'yemen'],
       keyDevelopment:
         'The war in Gaza and its regional spillover represent the most destabilizing development in the Middle East in decades. The scale of destruction in Gaza, the collapse of the humanitarian situation, the expansion of hostilities to Lebanon and the Red Sea, and the direct military exchange between Israel and Iran in April 2024 have fundamentally altered the regional security landscape and set back prospects for Israeli-Palestinian peace by a generation.',
     },
@@ -211,7 +211,7 @@ export const reportData = {
       status: 'critical',
       summary:
         'Europe faces its most severe security crisis since the end of the Cold War. Russia\'s full-scale invasion of Ukraine, now in its fourth year, continues with no end in sight. The war has killed tens of thousands, displaced over 10 million Ukrainians, and fundamentally redrawn European security architecture. NATO has expanded to include Finland and Sweden, defense spending across the alliance has surged, and the European Union has undertaken unprecedented sanctions and military assistance programs. The conflict between Armenia and Azerbaijan over Nagorno-Karabakh ended with Azerbaijan\'s complete recapture of the territory in September 2023, creating a new displaced population and unresolved tensions.',
-      conflicts: ['russia-ukraine', 'armenia-azerbaijan'],
+      conflicts: ['russia-ukraine', 'nagorno-karabakh'],
       keyDevelopment:
         'The Ukraine war\'s trajectory in 2024-2025 has been defined by grinding attrition, with Russia making incremental territorial gains in the Donbas at enormous human cost while Ukraine has struggled with ammunition shortages and mobilization challenges. The potential for a shift in US policy toward Ukraine following the 2024 presidential election has introduced significant uncertainty into the conflict\'s diplomatic future.',
     },
@@ -220,7 +220,7 @@ export const reportData = {
       status: 'concerning',
       summary:
         'The Asia-Pacific region presents a mixed but increasingly concerning picture. Myanmar\'s civil war has intensified dramatically, with resistance forces making significant territorial gains against the military junta in late 2023 and 2024, but the junta responding with devastating airstrikes on civilian areas. The conflict has displaced over 3 million people and destabilized border regions in Thailand, India, and Bangladesh. Tensions in the South China Sea and over Taiwan remain elevated, with regular Chinese military activities near Taiwan and confrontations between Chinese and Philippine vessels in disputed waters. The Korean Peninsula remains a frozen flashpoint, with North Korea\'s expanding nuclear and missile capabilities adding to regional risk.',
-      conflicts: ['myanmar', 'afghanistan', 'korea'],
+      conflicts: ['myanmar', 'south-china-sea', 'north-korea', 'taiwan'],
       keyDevelopment:
         'Myanmar\'s resistance forces, particularly the Three Brotherhood Alliance, achieved their most significant military gains since the 2021 coup, capturing multiple towns and border crossings. While this has weakened the junta, it has not produced a path to political resolution, and the humanitarian toll on civilians continues to mount.',
     },
@@ -229,7 +229,7 @@ export const reportData = {
       status: 'concerning',
       summary:
         'The Americas do not host interstate wars, but the region faces severe challenges from armed non-state actors, organized crime, and political instability. Colombia\'s "Total Peace" policy represents the most ambitious attempt to address multiple armed conflicts simultaneously, but negotiations with the ELN and dissident FARC factions have produced mixed results. Haiti has descended into near-total state collapse, with armed gangs controlling most of Port-au-Prince and a Kenyan-led multinational security mission struggling to restore order. Drug trafficking-related violence in Mexico, Ecuador, and Central America continues to produce death tolls that rival those of recognized armed conflicts.',
-      conflicts: ['colombia'],
+      conflicts: ['haiti'],
       keyDevelopment:
         'Haiti\'s crisis has deepened to the point where the state has effectively ceased to function across much of the country. The deployment of the Multinational Security Support mission has been insufficient to reverse the gangs\' territorial control, and political negotiations toward elections remain stalled. Haiti represents one of the starkest examples of international failure to prevent state collapse.',
     },
@@ -238,7 +238,7 @@ export const reportData = {
       status: 'mixed',
       summary:
         'The South Caucasus is in a period of tense transition following Azerbaijan\'s seizure of Nagorno-Karabakh in September 2023, which resulted in the displacement of virtually the entire ethnic Armenian population of the territory. Armenia and Azerbaijan are engaged in negotiations toward a bilateral peace treaty, but fundamental disagreements remain over border demarcation, transport corridors, and the rights of displaced Karabakh Armenians. Russia\'s peacekeeping role in the region has been diminished by its focus on Ukraine, creating both risks and opportunities for a new regional security order.',
-      conflicts: ['armenia-azerbaijan'],
+      conflicts: ['nagorno-karabakh'],
       keyDevelopment:
         'The Armenia-Azerbaijan peace negotiations represent a genuine, if fragile, opportunity. Both sides have expressed willingness to reach an agreement, and several draft articles have reportedly been agreed upon. However, the unresolved status of displaced Karabakh Armenians and disputes over territorial enclaves could derail progress. A signed treaty would be one of the most significant peace achievements in years.',
     },
@@ -330,7 +330,7 @@ export const reportData = {
     },
     {
       conflict: 'Libya',
-      conflictId: 'libya',
+      conflictId: null, // Not in current 15 tracked conflicts
       grade: 'D',
       gradeLabel: 'Elections perpetually delayed',
       assessment:
@@ -338,7 +338,7 @@ export const reportData = {
     },
     {
       conflict: 'Colombia',
-      conflictId: 'colombia',
+      conflictId: null, // Not in current 15 tracked conflicts
       grade: 'B-',
       gradeLabel: 'Ambitious but fragile',
       assessment:
@@ -346,7 +346,7 @@ export const reportData = {
     },
     {
       conflict: 'Armenia-Azerbaijan',
-      conflictId: 'armenia-azerbaijan',
+      conflictId: 'nagorno-karabakh',
       grade: 'B',
       gradeLabel: 'Negotiations progressing',
       assessment:
@@ -354,7 +354,7 @@ export const reportData = {
     },
     {
       conflict: 'Afghanistan',
-      conflictId: 'afghanistan',
+      conflictId: null, // Not in current 15 tracked conflicts
       grade: 'F',
       gradeLabel: 'No process, no engagement',
       assessment:
@@ -362,7 +362,7 @@ export const reportData = {
     },
     {
       conflict: 'North Korea',
-      conflictId: 'korea',
+      conflictId: 'north-korea',
       grade: 'F',
       gradeLabel: 'Diplomacy abandoned',
       assessment:
