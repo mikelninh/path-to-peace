@@ -26,47 +26,68 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 56px;
 }
 
+/* ============================================
+   Logo
+   ============================================ */
 .nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--text-accent);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  flex-shrink: 0;
 }
 
 .logo-icon {
-  font-size: 1.5rem;
   color: var(--accent-peace);
+  display: flex;
+  align-items: center;
 }
 
+.logo-icon .icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* ============================================
+   Nav Links — Clean, minimal, spaced
+   ============================================ */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 8px;
+  gap: 2px;
+  align-items: center;
 }
 
-.nav-links a {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
+.nav-links > li > a {
+  color: var(--text-muted);
+  font-size: 0.8rem;
   font-weight: 500;
-  padding: 8px 14px;
+  padding: 7px 14px;
   border-radius: 6px;
   transition: all 0.2s;
+  white-space: nowrap;
   position: relative;
 }
 
-/* Sliding underline on hover */
-.nav-links a::after {
+.nav-links > li > a:hover,
+.nav-links > li > a.active {
+  color: var(--text-accent);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Subtle underline on hover */
+.nav-links > li > a::after {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: 3px;
   left: 14px;
   right: 14px;
-  height: 2px;
+  height: 1.5px;
   background: var(--accent-peace);
   border-radius: 1px;
   transform: scaleX(0);
@@ -74,46 +95,132 @@
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links > li > a:hover::after,
+.nav-links > li > a.active::after {
   transform: scaleX(1);
 }
 
-/* Exclude special nav buttons from underline */
-.nav-links a.nav-edu-btn::after,
+/* Exclude CTA from underline */
 .nav-links a.nav-action-btn::after {
   display: none;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--text-accent);
-  background: rgba(255,255,255,0.05);
-}
-
-.nav-links a.nav-edu-btn {
-  color: var(--accent-hope);
-  font-weight: 600;
-  border: 1px solid rgba(247, 220, 111, 0.3);
-}
-
-.nav-links a.nav-edu-btn:hover {
-  background: rgba(247, 220, 111, 0.1);
-  color: var(--accent-hope);
-}
-
+/* ============================================
+   CTA Button — Write Your Rep
+   ============================================ */
 .nav-links a.nav-action-btn {
   background: var(--accent-peace);
   color: var(--bg-primary);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 7px 16px;
   border-radius: 6px;
+  margin-left: 8px;
+  letter-spacing: 0.01em;
 }
 
 .nav-links a.nav-action-btn:hover {
   background: #3dbcb3;
   color: var(--bg-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.25);
 }
 
+/* ============================================
+   Dropdown — "Explore" menu
+   ============================================ */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.nav-dropdown-trigger:hover {
+  color: var(--text-accent);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-dropdown-trigger .icon {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.25s ease;
+  opacity: 0.6;
+}
+
+.nav-dropdown:hover .nav-dropdown-trigger .icon,
+.nav-dropdown.open .nav-dropdown-trigger .icon {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* Dropdown panel */
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 210px;
+  background: rgba(16, 16, 24, 0.98);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255,255,255,0.03);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px) scale(0.98);
+  transform-origin: top right;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 9px 14px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.12s;
+}
+
+.nav-dropdown-menu a:hover {
+  color: var(--text-accent);
+  background: rgba(255, 255, 255, 0.06);
+  padding-left: 18px;
+}
+
+.nav-dropdown-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 4px 10px;
+}
+
+/* ============================================
+   Mobile Toggle
+   ============================================ */
 .nav-toggle {
   display: none;
   flex-direction: column;
