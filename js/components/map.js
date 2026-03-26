@@ -60,8 +60,13 @@ function getRadius(displacedStr) {
 }
 
 // Animated pulse for critical conflicts
+// Uses requestAnimationFrame + visibility check instead of setInterval
+// to avoid layout thrashing when the map is scrolled out of view.
+let mapIsVisible = true;
+let pulseFrame = null;
+const pulseCircles = [];
+
 function addPulse(map, lat, lng, color) {
-  let phase = 0;
   const baseRadius = 50000;
   const pulse = L.circle([lat, lng], {
     radius: baseRadius,
@@ -72,13 +77,33 @@ function addPulse(map, lat, lng, color) {
     interactive: false,
   });
   pulse.addTo(map);
-  const interval = setInterval(() => {
-    phase = (phase + 0.05) % (Math.PI * 2);
-    const scale = 1 + Math.sin(phase) * 0.5;
-    pulse.setRadius(baseRadius * scale);
-    pulse.setStyle({ fillOpacity: 0.15 + Math.sin(phase) * 0.15 });
-  }, 50);
-  pulseIntervals.push(interval);
+  pulseCircles.push({ pulse, baseRadius, phase: Math.random() * Math.PI * 2 });
+}
+
+function animatePulses() {
+  if (mapIsVisible) {
+    for (const p of pulseCircles) {
+      p.phase = (p.phase + 0.03) % (Math.PI * 2);
+      const scale = 1 + Math.sin(p.phase) * 0.5;
+      p.pulse.setRadius(p.baseRadius * scale);
+      p.pulse.setStyle({ fillOpacity: 0.15 + Math.sin(p.phase) * 0.15 });
+    }
+  }
+  pulseFrame = requestAnimationFrame(animatePulses);
+}
+
+function startPulseObserver() {
+  const mapSection = document.getElementById('conflict-map');
+  if (!mapSection) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    mapIsVisible = entries[0].isIntersecting;
+  }, { threshold: 0 });
+
+  observer.observe(mapSection);
+
+  // Start the animation loop (runs only when visible)
+  pulseFrame = requestAnimationFrame(animatePulses);
 }
 
 // Draw connection arcs between related conflicts
@@ -199,6 +224,11 @@ export function createGlobalMap(containerId, conflicts) {
       addPulse(globalMap, c.lat, c.lng, cfg.color);
     }
   });
+
+  // Start pulse visibility observer (pauses animation when map not in viewport)
+  if (pulseCircles.length > 0) {
+    startPulseObserver();
+  }
 
   // Enable scroll zoom on click
   globalMap.on('click', () => {
