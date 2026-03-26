@@ -21,9 +21,16 @@ function createSearchUI() {
 
   const searchBtn = document.createElement('button');
   searchBtn.className = 'search-trigger';
-  searchBtn.innerHTML = '<span class="search-icon">🔍</span><span class="search-kbd">Ctrl+K</span>';
+  searchBtn.setAttribute('aria-label', 'Search (Ctrl+K)');
+  searchBtn.innerHTML = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><kbd>⌘K</kbd>`;
   searchBtn.addEventListener('click', openSearch);
-  nav.appendChild(searchBtn);
+  // Insert before the nav-links, not after
+  const navLinks = nav.querySelector('.nav-links');
+  if (navLinks) {
+    nav.insertBefore(searchBtn, navLinks);
+  } else {
+    nav.appendChild(searchBtn);
+  }
 
   // Create overlay
   const overlay = document.createElement('div');
@@ -32,9 +39,9 @@ function createSearchUI() {
   overlay.innerHTML = `
     <div class="search-container">
       <div class="search-input-wrapper">
-        <span class="search-input-icon">🔍</span>
-        <input type="text" class="search-input" id="search-input" placeholder="Search conflicts, lessons, modules..." autocomplete="off">
-        <span class="search-esc-hint">ESC</span>
+        <svg class="search-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search conflicts, lessons, tools..." autocomplete="off">
+        <kbd class="search-esc">esc</kbd>
       </div>
       <div class="search-results" id="search-results">
         <div class="search-empty">Type to search across all content...</div>
